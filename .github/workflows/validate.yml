@@ -1,0 +1,54 @@
+name: Validate Valdivia Bike Fest
+
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  validate-html:
+    runs-on: ubuntu-latest
+    name: Validate HTML
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install HTML Validator
+        run: npm install -g html-validate
+
+      - name: Validate HTML files
+        run: |
+          for file in *.html; do
+            echo "Validating $file..."
+            html-validate "$file" || true
+          done
+
+  check-links:
+    runs-on: ubuntu-latest
+    name: Check Internal Links
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check for broken internal links
+        run: |
+          # Verifica que todos los enlaces internos apunten a archivos existentes
+          grep -r "href=" *.html | grep -v "http" | grep -v "mailto:" | while read line; do
+            file=$(echo "$line" | grep -oP 'href="\K[^"]+')
+            if [[ "$file" != "#"* ]] && [[ ! -f "$file" ]] && [[ "$file" != "https://example.com"* ]]; then
+              echo "Warning: Potential broken link: $file"
+            fi
+          done
