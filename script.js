@@ -1,7 +1,7 @@
 const routeData = {
-  start: { index: '01 / 03', title: 'Salida', description: 'El punto donde todo se vuelve posible. Revisa el horario de convocatoria y llega con tiempo para preparar tu bicicleta.', distance: 'por definir', elevation: 'por definir', time: 'por definir' },
-  forest: { index: '02 / 03', title: 'Bosque', description: 'El terreno cambia aquí. La lectura de la ruta, el ritmo y la capacidad de escuchar tu bicicleta se vuelven parte de la carrera.', distance: 'por definir', elevation: 'por definir', time: 'por definir' },
-  finish: { index: '03 / 03', title: 'Meta', description: 'La última curva se disfruta distinto cuando conoces el camino. Aquí encontrarás la referencia de llegada y los accesos al tablero de resultados.', distance: 'por definir', elevation: 'por definir', time: 'por definir' }
+  start: { index: '01 / 03', title: 'Salida', description: 'Largada y llegada en el Complejo Deportivo Asenav (Alonso Doce 998, Valdivia). Revisa el horario de convocatoria y llega con tiempo para preparar tu bicicleta.', distance: '2.92 km', elevation: '74 m', time: 'Dom 14 mar, 14:10 hrs' },
+  forest: { index: '02 / 03', title: 'Circuito', description: 'Circuito Valdivia Bike Fest: 2.92 km con 74 metros de desnivel. El terreno cambia aquí. La lectura de la ruta, el ritmo y la capacidad de escuchar tu bicicleta se vuelven parte de la carrera.', distance: '2.92 km', elevation: '74 m', time: 'Por confirmar' },
+  finish: { index: '03 / 03', title: 'Meta', description: 'La última curva se disfruta distinto cuando conoces el camino. Llegada en el Complejo Deportivo Asenav, el mismo punto de partida.', distance: '2.92 km', elevation: '74 m', time: 'Dom 14 mar' }
 };
 
 const translations = {
@@ -60,8 +60,8 @@ const pageCopy = {
     es: { '.inner-intro h1': 'Tu marca<br><em>queda aquí.</em>', '.inner-intro > p:last-child': 'El tablero oficial se activará después de cada largada. Vuelve para buscar tu tiempo y revisar el resultado de tu categoría.' }
   },
   valdivia: {
-    en: { '.inner-intro h1': 'Race in the<br>city of<br><em>water.</em>', '.inner-intro > p:last-child': 'Come for the competition. Stay for the rivers, the forest, and a city best explored without rushing.' },
-    es: { '.inner-intro h1': 'Corre en la<br>ciudad del<br><em>agua.</em>', '.inner-intro > p:last-child': 'Ven por la competencia. Quédate por los ríos, el bosque y una ciudad que se recorre mejor sin apuro.' }
+    en: { '.valdivia-hero-content h1': 'Race in the<br>city of<br><em>water.</em>', '.valdivia-hero-content .section-kicker': 'Valdivia Bike Fest / Valdivia', '.valdivia-intro-text': 'Valdivia is a city of rivers, rain, and deep green. Come for the competition, stay for the forests, the gastronomy, and a culture best explored without rushing. Here water meets forest, and every corner has a story to tell.', '.valdivia-recommendations-header .section-kicker': 'Recommendations', '.valdivia-recommendations-header h2': 'Discover<br><em>Valdivia.</em>', '.valdivia-card:nth-child(1) h3': 'Rivers &<br>navigation', '.valdivia-card:nth-child(1) p': 'The Calle-Calle, Valdivia, and Cau-Cau rivers are the heart of the city. Navigate to Teja Island or cross on the historic river ferry.', '.valdivia-card:nth-child(1) .valdivia-card-link': 'Learn more <span aria-hidden="true">↗</span>', '.valdivia-card:nth-child(2) h3': 'Temperate<br>forest', '.valdivia-card:nth-child(2) p': 'The Valdivian temperate rainforest is one of the most biodiverse on the planet. Walk among myrtles, coigües, and centuries-old mosses minutes from downtown.', '.valdivia-card:nth-child(2) .valdivia-card-link': 'Learn more <span aria-hidden="true">↗</span>', '.valdivia-card:nth-child(3) h3': 'Local<br>gastronomy', '.valdivia-card:nth-child(3) p': 'From fresh seafood to German-Valdivian cuisine. Try kuchen, lamb al palo, and seafood at downtown restaurants.', '.valdivia-card:nth-child(3) .valdivia-card-link': 'Learn more <span aria-hidden="true">↗</span>', '.valdivia-card:nth-child(4) h3': 'Culture<br>& history', '.valdivia-card:nth-child(4) p': 'Visit the Anthropological Museum, the Flack neighborhood murals, and the River Market. Valdivia has a vibrant cultural scene and history felt on every street.', '.valdivia-card:nth-child(4) .valdivia-card-link': 'Learn more <span aria-hidden="true">↗</span>' },
+    es: { '.valdivia-hero-content h1': 'Corre en la<br>ciudad del<br><em>agua.</em>', '.valdivia-hero-content .section-kicker': 'Valdivia Bike Fest / Valdivia', '.valdivia-intro-text': 'Valdivia es una ciudad de ríos, lluvia y verde profundo. Ven por la competencia, quédate por los bosques, la gastronomía y una cultura que se recorre mejor sin apuro. Aquí el agua encuentra el bosque, y cada esquina tiene una historia que contar.', '.valdivia-recommendations-header .section-kicker': 'Recomendaciones', '.valdivia-recommendations-header h2': 'Descubre<br><em>Valdivia.</em>', '.valdivia-card:nth-child(1) h3': 'Ríos y<br>navegación', '.valdivia-card:nth-child(1) p': 'Los ríos Calle-Calle, Valdivia y Cau-Cau son el corazón de la ciudad. Navega hasta la Isla Teja o cruza en el histórico ferry fluvial.', '.valdivia-card:nth-child(1) .valdivia-card-link': 'Saber más <span aria-hidden="true">↗</span>', '.valdivia-card:nth-child(2) h3': 'Bosque<br>templado', '.valdivia-card:nth-child(2) p': 'El bosque valdiviano es uno de los más biodiversos del planeta. Camina entre arrayanes, coigües y musgos centenarios a minutos del centro.', '.valdivia-card:nth-child(2) .valdivia-card-link': 'Saber más <span aria-hidden="true">↗</span>', '.valdivia-card:nth-child(3) h3': 'Gastronomía<br>local', '.valdivia-card:nth-child(3) p': 'Desde mariscos frescos hasta cocina alemana-valdiviana. Prueba el kuchen, el cordero al palo y los productos del mar en los restaurantes del centro.', '.valdivia-card:nth-child(3) .valdivia-card-link': 'Saber más <span aria-hidden="true">↗</span>', '.valdivia-card:nth-child(4) h3': 'Cultura<br>e historia', '.valdivia-card:nth-child(4) p': 'Visita el Museo Antropológico, los murales del barrio Flack y la Feria Fluvial. Valdivia tiene una escena cultural vibrante y una historia que se siente en cada calle.', '.valdivia-card:nth-child(4) .valdivia-card-link': 'Saber más <span aria-hidden="true">↗</span>' }
   },
   contacto: {
     en: { '.inner-intro h1': 'Let’s talk<br>about the <em>route.</em>', '.inner-intro > p:last-child': 'Have a question about the event, registration, or missing information? Write to us from Valdivia.' },
@@ -191,9 +191,24 @@ function setupHeaderScroll() {
   onScroll();
 }
 
+function setupValdiviaCarousel() {
+  const carousel = document.querySelector('.valdivia-carousel');
+  if (!carousel) return;
+  const images = carousel.querySelectorAll('.carousel-img');
+  if (images.length < 2) return;
+  let current = 0;
+  const interval = 5000;
+  setInterval(() => {
+    images[current].classList.remove('active');
+    current = (current + 1) % images.length;
+    images[current].classList.add('active');
+  }, interval);
+}
+
 setupRegistrationLinks();
 setupMobileMenu();
 setupLanguageToggle();
 setupRouteTabs();
 setupCountdown();
 setupHeaderScroll();
+setupValdiviaCarousel();

@@ -5,45 +5,46 @@ Documento de entrega para recopilar los datos que deben confirmarse antes de pub
 ## 1. Datos imprescindibles para publicar
 
 - [ ] Nombre oficial de la competencia y número de edición.
-- [ ] Fecha completa del evento: día de la semana, día, mes y año.
-- [ ] Hora oficial de inicio y zona horaria.
-- [ ] Ciudad, región y país confirmados.
-- [ ] Nombre exacto del lugar de largada y dirección.
-- [ ] Nombre exacto del lugar de llegada, si es diferente.
+- [x] Fecha completa del evento: día de la semana, día, mes y año. **Miércoles 10 al domingo 14 de marzo de 2027.**
+- [x] Hora oficial de inicio y zona horaria. **9:00 AM (America/Santiago), inicio retiro de kits.**
+- [x] Ciudad, región y país confirmados. **Valdivia, Chile.**
+- [x] Nombre exacto del lugar de largada y dirección. **Complejo deportivo Asenav, Alonso Doce 998, Valdivia.**
+- [x] Nombre exacto del lugar de llegada, si es diferente. **Mismo lugar: Complejo deportivo Asenav, Alonso Doce 998, Valdivia.**
 - [ ] URL real de la plataforma externa de inscripciones.
-- [ ] Correo oficial de contacto y persona o equipo responsable.
+- [x] Correo oficial de contacto y persona o equipo responsable. **valdiviabikefest@gmail.com**
 - [ ] URL oficial del sitio que debe utilizarse en SEO y datos estructurados.
-- [ ] Cuentas oficiales de Instagram, Facebook, YouTube y Strava.
+- [x] Cuentas oficiales de Instagram, Facebook, YouTube y Strava. **@valdiviabikefest_ (Instagram y Facebook confirmados)**
 - [ ] Logo final y autorización de uso de las fotografías entregadas.
 
 ## 2. Fecha, jornada y cuenta regresiva
 
 Confirmar el dato exacto que alimentará la cuenta regresiva de la página de inicio:
 
-- Fecha y hora de la largada principal.
-- Formato de fecha y hora que debe mostrarse al público.
-- Zona horaria: presumiblemente `America/Santiago`, por confirmar.
-- Si existen actividades en más de un día.
-- Fecha y horario de apertura y cierre del evento.
-- Fecha límite de inscripción.
-- Fechas de cambios de categoría, retiro de kit y acreditación.
-- Qué debe mostrar la web cuando la cuenta llegue a cero: “La carrera está en marcha”, “Resultados disponibles” u otro mensaje.
+- [x] Fecha y hora de la largada principal. **Domingo 14 de marzo de 2027 a las 14:10 hrs.**
+- [ ] Formato de fecha y hora que debe mostrarse al público.
+- [x] Zona horaria: `America/Santiago` **confirmada.**
+- [x] Si existen actividades en más de un día. **Sí, del miércoles 10 al domingo 14 de marzo de 2027.**
+- [x] Fecha y horario de apertura y cierre del evento. **Apertura: miércoles 10 de marzo, 9:00 AM. Cierre: domingo 14 de marzo.**
+- [ ] Fecha límite de inscripción.
+- [ ] Fechas de cambios de categoría, retiro de kit y acreditación.
+- [x] Qué debe mostrar la web cuando la cuenta llegue a cero. **"La carrera está en marcha" (ya implementado en script.js)**
 
 ## 3. Recorridos exactos
 
 El trazado actual es ilustrativo. Entregar una versión aprobada y publicable para cada recorrido:
 
-- [ ] Nombre oficial de cada recorrido o distancia.
-- [ ] Distancia exacta en kilómetros.
-- [ ] Desnivel positivo acumulado en metros.
+- [x] Nombre oficial de cada recorrido o distancia. **"Circuito Valdivia Bike Fest"**
+- [x] Distancia exacta en kilómetros. **2.92 km**
+- [x] Desnivel positivo acumulado en metros. **74 m**
 - [ ] Altitud mínima y máxima, si corresponde.
 - [ ] Tiempo estimado o tiempo máximo permitido.
-- [ ] Punto exacto de largada, con dirección y coordenadas.
-- [ ] Punto exacto de llegada, con dirección y coordenadas.
+- [x] Punto exacto de largada, con dirección y coordenadas. **Complejo deportivo Asenav, Alonso Doce 998, Valdivia. (Coordenadas pendientes)**
+- [x] Punto exacto de llegada, con dirección y coordenadas. **Mismo lugar: Complejo deportivo Asenav, Alonso Doce 998, Valdivia. (Coordenadas pendientes)**
 - [ ] Recorrido completo en archivo GPX, KML o GeoJSON.
+- [ ] Recorrido en appweb https://ridewithgps.com de ser posible.
 - [ ] Mapa visual oficial en alta resolución para escritorio y móvil.
-- [ ] Orden y nombre de los tramos que reemplazarán “Salida”, “Bosque” y “Meta”.
-- [ ] Distancia, desnivel y horario de cada tramo mostrado en las pestañas interactivas.
+- [ ] Orden y nombre de los tramos que reemplazarán "Salida", "Bosque" y "Meta".
+- [x] Distancia, desnivel y horario de cada tramo mostrado en las pestañas interactivas. **Actualizado en script.js: 2.92 km, 74 m desnivel**
 - [ ] Puntos de abastecimiento, asistencia mecánica, baños y puestos médicos.
 - [ ] Cruces de caminos, zonas de tránsito compartido y sectores de riesgo.
 - [ ] Desvíos o recorridos alternativos en caso de lluvia o emergencia.
@@ -151,12 +152,12 @@ El tablero está vacío y no tiene aún una fuente oficial conectada. Confirmar:
 
 ### Contacto
 
-- [ ] Confirmar que `hola@valdiviabikefest.cl` está operativo.
+- [x] Correo oficial de contacto. **valdiviabikefest@gmail.com**
 - [ ] Correo específico para inscripciones, prensa y auspicios, si corresponde.
 - [ ] Teléfono o WhatsApp de atención.
 - [ ] Horario de atención y tiempo estimado de respuesta.
 - [ ] Formulario de contacto: campos, destinatario, protección antispam y mensaje de éxito.
-- [ ] URL real de cada red social.
+- [x] URL real de cada red social. **Instagram y Facebook: @valdiviabikefest_**
 
 ## 9. Marca, imágenes y contenidos legales
 
@@ -192,13 +193,13 @@ Estos reemplazos están localizados y deben resolverse con los datos entregados:
 
 | Ubicación | Situación actual | Dato requerido |
 |---|---|---|
-| `index.html` | `data-date` vacío | Fecha y hora oficial de la largada |
-| `script.js` | Distancia, desnivel y horario como `por definir` | Métricas oficiales de cada tramo |
+| ~~`index.html`~~ | ~~`data-date` vacío~~ | ✅ **Completado: 2027-03-14T14:10:00-03:00** |
+| ~~`script.js`~~ | ~~Distancia, desnivel y horario como `por definir`~~ | ✅ **Completado: 2.92 km, 74 m desnivel** |
 | `index.html`, páginas internas | URL `https://example.com/registro-valdivia-bike-fest` | URL real de inscripciones |
 | `index.html` | URL canónica `https://example.com/valdivia-bike-fest` | Dominio definitivo |
-| `index.html` y footer | Redes sociales genéricas | Perfiles oficiales |
+| ~~`index.html` y footer~~ | ~~Redes sociales genéricas~~ | ✅ **Completado: @valdiviabikefest_** |
 | `ruta.html` | Mapa y trazado de referencia | Mapa y geometría aprobados |
-| `index.html` y `resultados.html` | Resultados “por publicar” | Fuente y datos de cronometraje |
+| `index.html` y `resultados.html` | Resultados "por publicar" | Fuente y datos de cronometraje |
 | Todas las páginas | Logo recortado provisional | Logo de producción |
 | `index.html` | Copys y estados provisionales | Redacción final aprobada |
 
