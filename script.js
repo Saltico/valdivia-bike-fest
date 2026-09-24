@@ -22,7 +22,7 @@ const pageCopy = {
       '.event-intro .lead-copy': 'Valdivia Bike Fest brings together those who come for the challenge and stay for the landscape. Everything you need to prepare for your race, in one place.',
       '.event-intro .arrow-link': 'Discover the event <span aria-hidden="true">↗</span>',
       '#route-title': 'Read the terrain<br>before you <em>ride it.</em>',
-      '.route-header-copy': 'Explore a route reference and discover how a VBK race day is organized. Official distance, elevation, and schedule details will be published here.',
+      '.route-header-copy': 'Explore a route reference and discover how a VBF race day is organized. Official distance, elevation, and schedule details will be published here.',
       '#schedule-title': 'Everything<br>in its <em>time.</em>',
       '#results-title': 'Your mark<br>stays <em>here.</em>',
       '.results-copy > p:not(.section-kicker)': 'When the race ends, come back to find your time, your category, and where you placed in the pack.',
@@ -38,7 +38,7 @@ const pageCopy = {
       '.event-intro .lead-copy': 'Valdivia Bike Fest reúne a quienes llegan por el desafío y se quedan por el paisaje. Todo lo que necesitas para preparar tu carrera, en un solo lugar.',
       '.event-intro .arrow-link': 'Conoce el evento <span aria-hidden="true">↗</span>',
       '#route-title': 'Lee el terreno<br>antes de <em>vivirlo.</em>',
-      '.route-header-copy': 'Explora una referencia del trazado y descubre cómo se organiza una jornada VBK. Los datos oficiales de distancia, desnivel y horarios se publicarán aquí.',
+      '.route-header-copy': 'Explora una referencia del trazado y descubre cómo se organiza una jornada VBF. Los datos oficiales de distancia, desnivel y horarios se publicarán aquí.',
       '#schedule-title': 'Todo en<br><em>su momento.</em>',
       '#results-title': 'La marca<br>queda <em>aquí.</em>',
       '.results-copy > p:not(.section-kicker)': 'Cuando la carrera termine, vuelve a este panel para buscar tu tiempo, tu categoría y el lugar que ocupaste en el pelotón.',
@@ -111,8 +111,24 @@ const pageCopy = {
     }
   },
   contacto: {
-    en: { '.inner-intro h1': 'Let’s talk<br>about the <em>route.</em>', '.inner-intro > p:last-child': 'Have a question about the event, registration, or missing information? Write to us from Valdivia.' },
-    es: { '.inner-intro h1': 'Hablemos<br>de la <em>ruta.</em>', '.inner-intro > p:last-child': '¿Tienes una pregunta sobre el evento, la inscripción o la información que falta? Escríbenos y te responderemos desde Valdivia.' }
+    en: {
+      '.contact-hero .inner-intro h1': "Let's talk<br>about the <em>route.</em>",
+      '.contact-hero .inner-intro > p:last-child': 'Have a question about the event, registration, or missing information? Write to us from Valdivia.',
+      '.contact-form-title': 'Send us <em>a message</em>',
+      'label[for="contact-name"]': 'Name',
+      'label[for="contact-email"]': 'Email',
+      'label[for="contact-message"]': 'Message',
+      '.contact-form .button': 'Send message <span>↗</span>'
+    },
+    es: {
+      '.contact-hero .inner-intro h1': 'Hablemos<br>de la <em>ruta.</em>',
+      '.contact-hero .inner-intro > p:last-child': '¿Tienes una pregunta sobre el evento, la inscripción o la información que falta? Escríbenos y te responderemos desde Valdivia.',
+      '.contact-form-title': 'Escríbenos <em>un mensaje</em>',
+      'label[for="contact-name"]': 'Nombre',
+      'label[for="contact-email"]': 'Email',
+      'label[for="contact-message"]': 'Mensaje',
+      '.contact-form .button': 'Enviar mensaje <span>↗</span>'
+    }
   }
 };
 
@@ -317,6 +333,50 @@ function setupScrollAnimations() {
   animatedElements.forEach((element) => observer.observe(element));
 }
 
+function setupContactLightbox() {
+  const lightbox = document.getElementById('contact-lightbox');
+  if (!lightbox) return;
+  
+  const gallery = document.querySelector('.contact-gallery');
+  const triggers = gallery ? gallery.querySelectorAll('[data-gallery-trigger]') : [];
+  const closeButtons = lightbox.querySelectorAll('[data-lightbox-close]');
+  const lightboxImage = lightbox.querySelector('.contact-lightbox-image');
+  
+  if (!triggers.length || !lightboxImage) return;
+  
+  const openLightbox = (imgSrc, imgAlt) => {
+    lightboxImage.src = imgSrc;
+    lightboxImage.alt = imgAlt || '';
+    lightbox.hidden = false;
+    document.body.style.overflow = 'hidden';
+  };
+  
+  const closeLightbox = () => {
+    lightbox.hidden = true;
+    lightboxImage.src = '';
+    document.body.style.overflow = '';
+  };
+  
+  triggers.forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      const img = trigger.querySelector('img');
+      if (img) {
+        openLightbox(img.src, img.alt);
+      }
+    });
+  });
+  
+  closeButtons.forEach((btn) => {
+    btn.addEventListener('click', closeLightbox);
+  });
+  
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !lightbox.hidden) {
+      closeLightbox();
+    }
+  });
+}
+
 setupRegistrationLinks();
 setupMobileMenu();
 setupLanguageToggle();
@@ -326,3 +386,4 @@ setupHeaderScroll();
 setupValdiviaCarousel();
 setupDestinationsNav();
 setupScrollAnimations();
+setupContactLightbox();
