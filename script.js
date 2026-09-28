@@ -141,17 +141,6 @@ function showToast(message) {
   toastTimer = setTimeout(() => { toast.hidden = true; }, 4500);
 }
 
-function setupRegistrationLinks() {
-  document.querySelectorAll('[data-registration]').forEach((link) => {
-    link.addEventListener('click', (event) => {
-      if (link.href.includes('example.com')) {
-        event.preventDefault();
-        showToast(currentLanguage === 'es' ? 'Conecta aquí la URL de la plataforma de inscripciones antes de publicar.' : 'Connect the registration platform URL here before publishing.');
-      }
-    });
-  });
-}
-
 function setupMobileMenu() {
   const toggle = document.querySelector('.menu-toggle');
   const menu = document.querySelector('#mobile-menu');
@@ -377,7 +366,6 @@ function setupContactLightbox() {
   });
 }
 
-setupRegistrationLinks();
 setupMobileMenu();
 setupLanguageToggle();
 setupRouteTabs();
