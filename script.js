@@ -1,3 +1,6 @@
+// URL oficial de inscripciones - fácilmente reemplazable
+const REGISTRATION_URL = 'https://www.eventrid.cl/eventos/mvk/valdivia-bikefest-2026';
+
 const routeData = {
   start: { index: '01 / 03', title: 'Salida', description: 'Largada y llegada en el Complejo Deportivo Asenav (Alonso Doce 998, Valdivia). Revisa el horario de convocatoria y llega con tiempo para preparar tu bicicleta.', distance: '2.92 km', elevation: '74 m', time: 'Dom 14 mar, 14:10 hrs' },
   forest: { index: '02 / 03', title: 'Circuito', description: 'Circuito Valdivia Bike Fest: 2.92 km con 74 metros de desnivel. El terreno cambia aquí. La lectura de la ruta, el ritmo y la capacidad de escuchar tu bicicleta se vuelven parte de la carrera.', distance: '2.92 km', elevation: '74 m', time: 'Por confirmar' },
@@ -17,117 +20,400 @@ const pageCopy = {
     en: {
       '#hero-title': 'The route<br><em>is waiting.</em>',
       '.hero-intro': 'A mountain bike competition between forest, water, and city. Save your place at the start line and know the terrain before you arrive.',
-      '.hero-footnote span:nth-child(2)': 'Official event information',
-      '#event-title': 'A full day.<br><em>One start line.</em>',
+      '.signal-line': 'Valdivia / Chile <span class="signal-rule"></span> VBF / NEXT EDITION',
+      '.status-message': '10–14 March 2027 <span aria-hidden="true">↗</span>',
+      
+      '#event-title': 'Five days.<br><em>Two formats.</em>',
       '.event-intro .lead-copy': 'Valdivia Bike Fest brings together those who come for the challenge and stay for the landscape. Everything you need to prepare for your race, in one place.',
       '.event-intro .arrow-link': 'Discover the event <span aria-hidden="true">↗</span>',
+      '.event-grid-label': 'WHAT YOU\'LL FIND',
+      '.info-list li:nth-child(1) strong': 'Two race<br>formats',
+      '.info-list li:nth-child(1) em': 'XCO and XCC circuits in Valdivia.',
+      '.info-list li:nth-child(2) strong': 'Information<br>without surprises',
+      '.info-list li:nth-child(2) em': 'Route, schedule, and clear recommendations.',
+      '.info-list li:nth-child(3) strong': 'The energy<br>of the pack',
+      '.info-list li:nth-child(3) em': 'A community that starts before pedaling.',
+      
       '#route-title': 'Read the terrain<br>before you <em>ride it.</em>',
       '.route-header-copy': 'Explore a route reference and discover how a VBF race day is organized. Official distance, elevation, and schedule details will be published here.',
+      '.route-tab:nth-child(1) strong': 'Start',
+      '.route-tab:nth-child(1) small': 'The pulse before the forest',
+      '.route-tab:nth-child(2) strong': 'Forest',
+      '.route-tab:nth-child(2) small': 'The terrain changes here',
+      '.route-tab:nth-child(3) strong': 'Finish',
+      '.route-tab:nth-child(3) small': 'Where the effort ends',
+      '.route-detail-top span:last-child': 'REFERENCE',
+      '.detail-footer span': 'Official data will be updated on this page.',
+      '.detail-footer a': 'View full route <span aria-hidden="true">↗</span>',
+      
       '#schedule-title': 'Everything<br>in its <em>time.</em>',
+      '.schedule-row:nth-child(1) strong': 'Kit pickup',
+      '.schedule-row:nth-child(1) span': 'Wednesday, March 10, 9:00 AM',
+      '.schedule-row:nth-child(1) em': 'Activities begin',
+      '.schedule-row:nth-child(2) strong': 'Technical meeting',
+      '.schedule-row:nth-child(2) span': 'Sunday, March 14, TBC',
+      '.schedule-row:nth-child(2) em': 'All categories',
+      '.schedule-row:nth-child(3) strong': 'Main start',
+      '.schedule-row:nth-child(3) span': 'Sunday, March 14, 2:10 PM',
+      '.schedule-row:nth-child(3) em': 'The clock starts here',
+      '.schedule-row:nth-child(4) strong': 'Results',
+      '.schedule-row:nth-child(4) span': 'After each finish',
+      '.schedule-row:nth-child(4) em': 'Online query',
+      
       '#results-title': 'Your mark<br>stays <em>here.</em>',
       '.results-copy > p:not(.section-kicker)': 'When the race ends, come back to find your time, your category, and where you placed in the pack.',
+      '.results-copy .arrow-link': 'View results <span aria-hidden="true">↗</span>',
+      '.results-board-head span:first-child': 'VBF / RESULTS',
+      '.results-board-head span:last-child': 'COMING SOON',
+      '.results-empty strong': 'Results<br>to be published',
+      '.results-empty p': 'The board activates after the race.',
+      '.results-board-foot span:nth-child(1)': 'OVERALL',
+      '.results-board-foot span:nth-child(2)': 'CATEGORIES',
+      '.results-board-foot span:nth-child(3)': 'TIMES',
+      
       '#valdivia-title': 'Come for<br>the race.<br><em>Stay for<br>the city.</em>',
       '.valdivia-copy > p:not(.section-kicker)': 'A city of rivers, rain, and deep green. Turn your race into a getaway and discover the place that gives this experience its character.',
-      '#contact-title': 'See you<br>on the <em>route.</em>'
+      '.valdivia-copy .arrow-link': 'Discover Valdivia <span aria-hidden="true">↗</span>',
+      '.map-phrase': 'WHERE WATER<br>MEETS THE FOREST',
+      
+      '#contact-title': 'See you<br>on the <em>route.</em>',
+      '.cta-coordinate': 'VALDIVIA / CHILE',
+      '.final-cta .section-kicker': 'Your next race',
+      '.cta-actions .text-link': 'Contact us <span aria-hidden="true">↗</span>',
+      
+      '.site-footer .footer-links a:nth-child(1)': 'Event',
+      '.site-footer .footer-links a:nth-child(2)': 'Route & schedule',
+      '.site-footer .footer-links a:nth-child(3)': 'Results',
+      '.site-footer .footer-links a:nth-child(4)': 'Valdivia',
+      '.site-footer .footer-links a:nth-child(5)': 'Contact',
+      '.footer-meta span:first-child': '© VBF / Valdivia, Chile',
+      '.footer-meta span:last-child': 'ES / EN'
     },
     es: {
       '#hero-title': 'La ruta<br><em>te está</em><br>esperando.',
       '.hero-intro': 'Una competencia de mountain bike entre bosque, agua y ciudad. Guarda tu lugar en la línea de partida y conoce el terreno antes de llegar.',
-      '.hero-footnote span:nth-child(2)': 'Información oficial del evento',
-      '#event-title': 'Un día completo.<br><em>Una línea de partida.</em>',
+      '.signal-line': 'Valdivia / Chile <span class="signal-rule"></span> VBF / PRÓXIMA EDICIÓN',
+      '.status-message': '10–14 marzo 2027 <span aria-hidden="true">↗</span>',
+      
+      '#event-title': 'Cinco días.<br><em>Dos formatos.</em>',
       '.event-intro .lead-copy': 'Valdivia Bike Fest reúne a quienes llegan por el desafío y se quedan por el paisaje. Todo lo que necesitas para preparar tu carrera, en un solo lugar.',
       '.event-intro .arrow-link': 'Conoce el evento <span aria-hidden="true">↗</span>',
+      '.event-grid-label': 'LO QUE ENCONTRARÁS',
+      '.info-list li:nth-child(1) strong': 'Dos formatos<br>de carrera',
+      '.info-list li:nth-child(1) em': 'Circuitos XCO y XCC en Valdivia.',
+      '.info-list li:nth-child(2) strong': 'Información<br>sin sorpresas',
+      '.info-list li:nth-child(2) em': 'Ruta, horarios y recomendaciones claras.',
+      '.info-list li:nth-child(3) strong': 'La energía<br>del pelotón',
+      '.info-list li:nth-child(3) em': 'Una comunidad que empieza antes de pedalear.',
+      
       '#route-title': 'Lee el terreno<br>antes de <em>vivirlo.</em>',
       '.route-header-copy': 'Explora una referencia del trazado y descubre cómo se organiza una jornada VBF. Los datos oficiales de distancia, desnivel y horarios se publicarán aquí.',
+      '.route-tab:nth-child(1) strong': 'Salida',
+      '.route-tab:nth-child(1) small': 'El pulso antes del bosque',
+      '.route-tab:nth-child(2) strong': 'Bosque',
+      '.route-tab:nth-child(2) small': 'El terreno cambia aquí',
+      '.route-tab:nth-child(3) strong': 'Meta',
+      '.route-tab:nth-child(3) small': 'Donde termina el esfuerzo',
+      '.route-detail-top span:last-child': 'REFERENCIA',
+      '.detail-footer span': 'Los datos oficiales se actualizarán en esta página.',
+      '.detail-footer a': 'Ver ruta completa <span aria-hidden="true">↗</span>',
+      
       '#schedule-title': 'Todo en<br><em>su momento.</em>',
+      '.schedule-row:nth-child(1) strong': 'Retiro de kit',
+      '.schedule-row:nth-child(1) span': 'Miércoles 10 de marzo, 9:00 hrs',
+      '.schedule-row:nth-child(1) em': 'Inicio de actividades',
+      '.schedule-row:nth-child(2) strong': 'Reunión de corredores',
+      '.schedule-row:nth-child(2) span': 'Domingo 14 de marzo, por confirmar',
+      '.schedule-row:nth-child(2) em': 'Atención a todas las categorías',
+      '.schedule-row:nth-child(3) strong': 'Largada principal',
+      '.schedule-row:nth-child(3) span': 'Domingo 14 de marzo, 14:10 hrs',
+      '.schedule-row:nth-child(3) em': 'El reloj empieza aquí',
+      '.schedule-row:nth-child(4) strong': 'Resultados',
+      '.schedule-row:nth-child(4) span': 'Después de cada llegada',
+      '.schedule-row:nth-child(4) em': 'Consulta online',
+      
       '#results-title': 'La marca<br>queda <em>aquí.</em>',
       '.results-copy > p:not(.section-kicker)': 'Cuando la carrera termine, vuelve a este panel para buscar tu tiempo, tu categoría y el lugar que ocupaste en el pelotón.',
+      '.results-copy .arrow-link': 'Ver resultados <span aria-hidden="true">↗</span>',
+      '.results-board-head span:first-child': 'VBF / RESULTADOS',
+      '.results-board-head span:last-child': 'PRÓXIMAMENTE',
+      '.results-empty strong': 'Resultados<br>por publicar',
+      '.results-empty p': 'El tablero se activa después de la carrera.',
+      '.results-board-foot span:nth-child(1)': 'GENERAL',
+      '.results-board-foot span:nth-child(2)': 'CATEGORÍAS',
+      '.results-board-foot span:nth-child(3)': 'TIEMPOS',
+      
       '#valdivia-title': 'Ven por<br>la carrera.<br><em>Quédate por<br>la ciudad.</em>',
       '.valdivia-copy > p:not(.section-kicker)': 'Una ciudad de ríos, lluvia y verde profundo. Haz de tu carrera una escapada y conoce el lugar que le da su carácter a esta experiencia.',
-      '#contact-title': 'Nos vemos<br>en la <em>ruta.</em>'
+      '.valdivia-copy .arrow-link': 'Descubre Valdivia <span aria-hidden="true">↗</span>',
+      '.map-phrase': 'DONDE EL AGUA<br>ENCUENTRA EL BOSQUE',
+      
+      '#contact-title': 'Nos vemos<br>en la <em>ruta.</em>',
+      '.cta-coordinate': 'VALDIVIA / CHILE',
+      '.final-cta .section-kicker': 'Tu próxima carrera',
+      '.cta-actions .text-link': 'Contáctanos <span aria-hidden="true">↗</span>',
+      
+      '.site-footer .footer-links a:nth-child(1)': 'Evento',
+      '.site-footer .footer-links a:nth-child(2)': 'Ruta y horario',
+      '.site-footer .footer-links a:nth-child(3)': 'Resultados',
+      '.site-footer .footer-links a:nth-child(4)': 'Valdivia',
+      '.site-footer .footer-links a:nth-child(5)': 'Contacto',
+      '.footer-meta span:first-child': '© VBF / Valdivia, Chile',
+      '.footer-meta span:last-child': 'ES / EN'
     }
   },
   evento: {
-    en: { '.inner-intro h1': 'The race<br>starts <em>earlier.</em>', '.inner-intro > p:last-child': 'The information you need to decide, prepare your bike, and arrive in Valdivia with your mind set on the route.' },
-    es: { '.inner-intro h1': 'La carrera<br>empieza <em>antes.</em>', '.inner-intro > p:last-child': 'La información que necesitas para decidir, preparar tu bicicleta y llegar a Valdivia con la cabeza puesta en la ruta.' }
+    en: { 
+      '.inner-intro .section-kicker': 'Valdivia Bike Fest / Event',
+      '.inner-intro h1': 'The race<br>starts <em>earlier.</em>', 
+      '.inner-intro > p:last-child': 'The information you need to decide, prepare your bike, and arrive in Valdivia with your mind set on the route.',
+      '.inner-aside': 'VBF / 01<br><span>EVERYTHING YOU<br>NEED TO KNOW</span>',
+      '.inner-content h2': 'Five days that<br>are lived<br>in full.',
+      '.inner-content p:first-of-type': 'Valdivia Bike Fest 2027 takes place from Wednesday, March 10 to Sunday, March 14 at the Complejo Deportivo ASENAV. The event begins with kit pickup at 9:00 AM and features two race formats: XCO (Cross-Country Olympic) and XCC (Short Track).',
+      '.detail-list li:nth-child(1) strong': 'Competition',
+      '.detail-list li:nth-child(1) em': 'Two circuits, multiple categories, one venue.',
+      '.detail-list li:nth-child(2) strong': 'Community',
+      '.detail-list li:nth-child(2) em': 'Riders, families, and supporters share the experience.',
+      '.detail-list li:nth-child(3) strong': 'Information',
+      '.detail-list li:nth-child(3) em': 'Route, schedule, and recommendations in one place.'
+    },
+    es: { 
+      '.inner-intro .section-kicker': 'Valdivia Bike Fest / Evento',
+      '.inner-intro h1': 'La carrera<br>empieza <em>antes.</em>', 
+      '.inner-intro > p:last-child': 'La información que necesitas para decidir, preparar tu bicicleta y llegar a Valdivia con la cabeza puesta en la ruta.',
+      '.inner-aside': 'VBF / 01<br><span>TODO LO QUE<br>NECESITAS SABER</span>',
+      '.inner-content h2': 'Cinco días que<br>se viven<br>completos.',
+      '.inner-content p:first-of-type': 'Valdivia Bike Fest 2027 se realiza del miércoles 10 al domingo 14 de marzo en el Complejo Deportivo ASENAV. El evento inicia con el retiro de kits a las 9:00 y cuenta con dos formatos de carrera: XCO (Cross-Country Olímpico) y XCC (Short Track).',
+      '.detail-list li:nth-child(1) strong': 'Competencia',
+      '.detail-list li:nth-child(1) em': 'Dos circuitos, múltiples categorías, una sede.',
+      '.detail-list li:nth-child(2) strong': 'Comunidad',
+      '.detail-list li:nth-child(2) em': 'Corredores, familias y seguidores comparten la experiencia.',
+      '.detail-list li:nth-child(3) strong': 'Información',
+      '.detail-list li:nth-child(3) em': 'Ruta, horarios y recomendaciones en un solo lugar.'
+    }
   },
   ruta: {
-    en: { '.inner-intro h1': 'Know the<br><em>terrain.</em>', '.inner-intro > p:last-child': 'A reference guide to read the race before the official course and schedule are published.' },
-    es: { '.inner-intro h1': 'Conoce el<br><em>terreno.</em>', '.inner-intro > p:last-child': 'Una guía de referencia para leer la carrera antes de que publiquemos el trazado y los horarios oficiales.' }
+    en: { 
+      '.inner-intro .section-kicker': 'Valdivia Bike Fest / Route & schedule',
+      '.inner-intro h1': 'Two circuits.<br><em>One venue.</em>', 
+      '.inner-intro > p:last-child': 'Valdivia Bike Fest 2027 features two race formats: Cross-Country Olympic (XCO) and Short Track (XCC). Both circuits start and finish at Complejo Deportivo ASENAV.',
+      
+      // Circuits section
+      '.circuit-card:nth-child(1) .circuit-label': 'Circuit 01',
+      '.circuit-card:nth-child(1) .circuit-full-name': 'Cross-Country Olympic',
+      '.circuit-card:nth-child(1) .metric:nth-child(1) .metric-label': 'Distance per lap',
+      '.circuit-card:nth-child(1) .metric:nth-child(2) .metric-label': 'Accumulated elevation',
+      '.circuit-card:nth-child(1) .metric:nth-child(3) .metric-unit': 'point',
+      '.circuit-card:nth-child(1) .metric:nth-child(3) .metric-label': 'Aid station',
+      '.circuit-card:nth-child(1) .circuit-details p': 'Technical circuit with forest sections, climbs, and descents. Terrain reading and sustained pace are key. Spectator zones allow following the race at strategic points.',
+      '.circuit-card:nth-child(1) .circuit-status .status-label': 'Schedule',
+      '.circuit-card:nth-child(1) .circuit-status .status-value': 'To be confirmed at technical congress',
+      
+      '.circuit-card:nth-child(2) .circuit-label': 'Circuit 02',
+      '.circuit-card:nth-child(2) .circuit-full-name': 'Short Track',
+      '.circuit-card:nth-child(2) .metric:nth-child(1) .metric-label': 'Distance per lap',
+      '.circuit-card:nth-child(2) .metric:nth-child(2) .metric-label': 'Accumulated elevation',
+      '.circuit-card:nth-child(2) .metric:nth-child(3) .metric-label': 'Approx. duration',
+      '.circuit-card:nth-child(2) .circuit-details p': 'Short and explosive circuit. Intense race format with multiple laps. 2026 reference: ~10 laps Elite Men, ~9 laps Elite Women. Official 2027 laps will be communicated at the technical congress.',
+      '.circuit-card:nth-child(2) .circuit-status .status-label': 'Schedule',
+      '.circuit-card:nth-child(2) .circuit-status .status-value': 'To be confirmed at technical congress',
+      
+      // Event strip
+      '.route-event-item:nth-child(1) .route-event-label': 'Kit pickup',
+      '.route-event-item:nth-child(1) .route-event-value': 'Wed 10 Mar — 9:00 AM',
+      '.route-event-item:nth-child(2) .route-event-label': 'Technical congress',
+      '.route-event-item:nth-child(2) .route-event-value': 'To be confirmed',
+      '.route-event-item:nth-child(3) .route-event-label': 'XCO / XCC starts',
+      '.route-event-item:nth-child(3) .route-event-value': 'Sun 14 Mar — To be confirmed',
+      '.route-event-item:nth-child(4) .route-event-label': 'Awards ceremony',
+      '.route-event-item:nth-child(4) .route-event-value': 'After each finish',
+      
+      // RideWithGPS section
+      '.rwgps-section .section-kicker': 'Interactive viewer',
+      '.rwgps-container h2': 'Explore the<br><em>full route.</em>',
+      '.rwgps-badge': 'GPS Route',
+      '.rwgps-stat:nth-child(1) .rwgps-stat-label': 'Distance (km)',
+      '.rwgps-stat:nth-child(2) .rwgps-stat-label': 'Elevation (m)',
+      '.rwgps-stat:nth-child(3) .rwgps-stat-label': 'Est. time',
+      '.rwgps-placeholder-footer span': 'Route viewer coming soon'
+    },
+    es: { 
+      '.inner-intro .section-kicker': 'Valdivia Bike Fest / Ruta y horario',
+      '.inner-intro h1': 'Dos circuitos.<br><em>Una sede.</em>', 
+      '.inner-intro > p:last-child': 'Valdivia Bike Fest 2027 cuenta con dos formatos de carrera: Cross-Country Olímpico (XCO) y Short Track (XCC). Ambos circuitos tienen salida y llegada en el Complejo Deportivo ASENAV.',
+      
+      // Circuits section
+      '.circuit-card:nth-child(1) .circuit-label': 'Circuito 01',
+      '.circuit-card:nth-child(1) .circuit-full-name': 'Cross-Country Olímpico',
+      '.circuit-card:nth-child(1) .metric:nth-child(1) .metric-label': 'Distancia por vuelta',
+      '.circuit-card:nth-child(1) .metric:nth-child(2) .metric-label': 'Desnivel acumulado',
+      '.circuit-card:nth-child(1) .metric:nth-child(3) .metric-unit': 'punto',
+      '.circuit-card:nth-child(1) .metric:nth-child(3) .metric-label': 'Abastecimiento',
+      '.circuit-card:nth-child(1) .circuit-details p': 'Circuito técnico con sectores de bosque, escalada y descenso. La lectura del terreno y el ritmo sostenido son clave. Sectores destinados al público permiten seguir la carrera en puntos estratégicos.',
+      '.circuit-card:nth-child(1) .circuit-status .status-label': 'Horario',
+      '.circuit-card:nth-child(1) .circuit-status .status-value': 'Por confirmar en congreso técnico',
+      
+      '.circuit-card:nth-child(2) .circuit-label': 'Circuito 02',
+      '.circuit-card:nth-child(2) .circuit-full-name': 'Short Track',
+      '.circuit-card:nth-child(2) .metric:nth-child(1) .metric-label': 'Distancia por vuelta',
+      '.circuit-card:nth-child(2) .metric:nth-child(2) .metric-label': 'Desnivel acumulado',
+      '.circuit-card:nth-child(2) .metric:nth-child(3) .metric-label': 'Duración aprox.',
+      '.circuit-card:nth-child(2) .circuit-details p': 'Circuito corto y explosivo. Formato de carrera intenso con múltiples vueltas. Referencia 2026: ~10 vueltas Elite Masculino, ~9 vueltas Elite Femenino. Las vueltas oficiales 2027 se comunican en el congreso técnico.',
+      '.circuit-card:nth-child(2) .circuit-status .status-label': 'Horario',
+      '.circuit-card:nth-child(2) .circuit-status .status-value': 'Por confirmar en congreso técnico',
+      
+      // Event strip
+      '.route-event-item:nth-child(1) .route-event-label': 'Retiro de kits',
+      '.route-event-item:nth-child(1) .route-event-value': 'Mié 10 mar — 9:00 hrs',
+      '.route-event-item:nth-child(2) .route-event-label': 'Congreso técnico',
+      '.route-event-item:nth-child(2) .route-event-value': 'Por confirmar',
+      '.route-event-item:nth-child(3) .route-event-label': 'Largadas XCO / XCC',
+      '.route-event-item:nth-child(3) .route-event-value': 'Dom 14 mar — Por confirmar',
+      '.route-event-item:nth-child(4) .route-event-label': 'Premiación',
+      '.route-event-item:nth-child(4) .route-event-value': 'Después de cada llegada',
+      
+      // RideWithGPS section
+      '.rwgps-section .section-kicker': 'Visualizador interactivo',
+      '.rwgps-container h2': 'Explora la<br><em>ruta completa.</em>',
+      '.rwgps-badge': 'Ruta GPS',
+      '.rwgps-stat:nth-child(1) .rwgps-stat-label': 'Distancia (km)',
+      '.rwgps-stat:nth-child(2) .rwgps-stat-label': 'Desnivel (m)',
+      '.rwgps-stat:nth-child(3) .rwgps-stat-label': 'Tiempo est.',
+      '.rwgps-placeholder-footer span': 'Visualizador de ruta disponible próximamente'
+    }
   },
   resultados: {
-    en: { '.inner-intro h1': 'Your mark<br><em>stays here.</em>', '.inner-intro > p:last-child': 'The official board will go live after each start. Come back to find your time and category result.' },
-    es: { '.inner-intro h1': 'Tu marca<br><em>queda aquí.</em>', '.inner-intro > p:last-child': 'El tablero oficial se activará después de cada largada. Vuelve para buscar tu tiempo y revisar el resultado de tu categoría.' }
+    en: { 
+      '.inner-intro .section-kicker': 'Valdivia Bike Fest / Results',
+      '.inner-intro h1': 'Your mark<br><em>stays here.</em>', 
+      '.inner-intro > p:last-child': 'The official board will go live after each start. Come back to find your time and category result.',
+      '.results-page-board .results-board-head span:first-child': 'VBF / RESULTS',
+      '.results-page-board .results-board-head span:last-child': 'COMING SOON',
+      '.results-page-board .results-empty strong': 'Results<br>to be published',
+      '.results-page-board .results-empty p': 'The board activates after the race.',
+      '.results-page-board .results-board-foot span:nth-child(1)': 'XCO',
+      '.results-page-board .results-board-foot span:nth-child(2)': 'XCC / SHORT TRACK',
+      '.results-page-board .results-board-foot span:nth-child(3)': 'CATEGORIES'
+    },
+    es: { 
+      '.inner-intro .section-kicker': 'Valdivia Bike Fest / Resultados',
+      '.inner-intro h1': 'Tu marca<br><em>queda aquí.</em>', 
+      '.inner-intro > p:last-child': 'El tablero oficial se activará después de cada largada. Vuelve para buscar tu tiempo y revisar el resultado de tu categoría.',
+      '.results-page-board .results-board-head span:first-child': 'VBF / RESULTADOS',
+      '.results-page-board .results-board-head span:last-child': 'PRÓXIMAMENTE',
+      '.results-page-board .results-empty strong': 'Resultados<br>por publicar',
+      '.results-page-board .results-empty p': 'El tablero se activa después de la carrera.',
+      '.results-page-board .results-board-foot span:nth-child(1)': 'XCO',
+      '.results-page-board .results-board-foot span:nth-child(2)': 'XCC / SHORT TRACK',
+      '.results-page-board .results-board-foot span:nth-child(3)': 'CATEGORÍAS'
+    }
   },
   valdivia: {
     en: { 
-      '.valdivia-hero-content h1': 'Race in the<br><em>city of water</em>', 
       '.valdivia-hero-content .section-kicker': 'Valdivia Bike Fest / Valdivia', 
+      '.valdivia-hero-content h1': 'Race in the<br><em>city of water</em>', 
       '.valdivia-intro-text': 'Valdivia is a city of rivers, rain, and deep green. Come for the competition, stay for the forests, the gastronomy, and a culture best explored without rushing. Here water meets forest, and every corner has a story to tell.', 
       '.valdivia-recommendations-header .section-kicker': 'Recommendations', 
       '.valdivia-recommendations-header h2': 'Discover<br><em>Valdivia.</em>',
-      '.valdivia-card:nth-child(1) h3': 'Rivers &<br>navigation', 
-      '.valdivia-card:nth-child(1) p': 'The Calle-Calle, Valdivia, and Cau-Cau rivers are the heart of the city. Navigate to Teja Island or cross on the historic river ferry.', 
-      '.valdivia-card:nth-child(1) .valdivia-card-link': 'Learn more <span aria-hidden="true">↗</span>', 
-      '.valdivia-card:nth-child(2) h3': 'Temperate<br>forest', 
-      '.valdivia-card:nth-child(2) p': 'The Valdivian temperate rainforest is one of the most biodiverse on the planet. Walk among myrtles, coigües, and centuries-old mosses minutes from downtown.', 
-      '.valdivia-card:nth-child(2) .valdivia-card-link': 'Learn more <span aria-hidden="true">↗</span>', 
-      '.valdivia-card:nth-child(3) h3': 'Local<br>gastronomy', 
-      '.valdivia-card:nth-child(3) p': 'From fresh seafood to German-Valdivian cuisine. Try kuchen, lamb al palo, and seafood at downtown restaurants.', 
-      '.valdivia-card:nth-child(3) .valdivia-card-link': 'Learn more <span aria-hidden="true">↗</span>', 
-      '.valdivia-card:nth-child(4) h3': 'Culture<br>& history', 
-      '.valdivia-card:nth-child(4) p': 'Visit the Anthropological Museum, the Flack neighborhood murals, and the River Market. Valdivia has a vibrant cultural scene and history felt on every street.', 
-      '.valdivia-card:nth-child(4) .valdivia-card-link': 'Learn more <span aria-hidden="true">↗</span>',
-      // Destinations translations
+      // Destinations nav tooltips
+      '.destinations-nav-item:nth-child(1)': 'Forests',
+      '.destinations-nav-item:nth-child(2)': 'Volcano',
+      '.destinations-nav-item:nth-child(3)': 'Wetlands',
+      '.destinations-nav-item:nth-child(4)': 'Breweries',
+      '.destinations-nav-item:nth-child(5)': 'History',
+      // Destination sections
       '#alerce-costero-title': 'Alerce Costero: <span class="destination-title-accent">ancient forests</span> by the Pacific',
       '#alerce-costero .destination-description': 'Enter one of the most biodiverse temperate forests on the planet. Alerce Costero National Park is home to millenary trees, trails among myrtles and coigües, and unique coastal landscapes in the Los Ríos Region.',
+      '#alerce-costero .destination-link': 'Learn more <span aria-hidden="true">↗</span>',
       '#mocho-choshuenco-title': 'Mocho Choshuenco: mountains, <span class="destination-title-accent">snow and adventure</span>',
       '#mocho-choshuenco .destination-description': 'Climb to the crater of this active volcano and discover a turquoise lagoon at its summit. Mocho Choshuenco National Reserve offers trekking, winter sports, and panoramic views of the Andes and the Pacific Ocean.',
+      '#mocho-choshuenco .destination-link': 'Learn more <span aria-hidden="true">↗</span>',
       '#punucapa-title': 'Punucapa: <span class="destination-title-accent">wetlands</span>, rivers and nature',
       '#punucapa .destination-description': 'Navigate the Punucapa wetlands, a unique ecosystem where rivers meet the forest. Observe native birds, explore trails among aquatic vegetation, and discover the biodiversity of Valdivian wetlands.',
+      '#punucapa .destination-link': 'Learn more <span aria-hidden="true">↗</span>',
       '#cervezas-title': 'The <span class="destination-title-accent">brewing tradition</span> of Valdivia',
       '#cervezas .destination-description': 'Valdivia is the birthplace of craft beer in Chile. Discover the German-Valdivian brewing heritage, visit historic breweries like Kunstmann and Schopfloch, and taste unique beers made with local ingredients.',
+      '#cervezas .destination-link': 'Learn more <span aria-hidden="true">↗</span>',
       '#fuerte-niebla-title': 'Fuerte Niebla: <span class="destination-title-accent">history</span> by the sea',
-      '#fuerte-niebla .destination-description': 'Visit the Castillo de Niebla, one of the most important Spanish colonial fortresses in South America. Explore its walls, museums, and cannons while enjoying panoramic views of Valdivia Bay and the Calle-Calle River.'
+      '#fuerte-niebla .destination-description': 'Visit the Castillo de Niebla, one of the most important Spanish colonial fortresses in South America. Explore its walls, museums, and cannons while enjoying panoramic views of Valdivia Bay and the Calle-Calle River.',
+      '#fuerte-niebla .destination-link': 'Learn more <span aria-hidden="true">↗</span>'
     },
     es: { 
-      '.valdivia-hero-content h1': 'Corre en la<br><em>ciudad del agua</em>', 
       '.valdivia-hero-content .section-kicker': 'Valdivia Bike Fest / Valdivia', 
+      '.valdivia-hero-content h1': 'Corre en la<br><em>ciudad del agua</em>', 
       '.valdivia-intro-text': 'Valdivia es una ciudad de ríos, lluvia y verde profundo. Ven por la competencia, quédate por los bosques, la gastronomía y una cultura que se recorre mejor sin apuro. Aquí el agua encuentra el bosque, y cada esquina tiene una historia que contar.', 
       '.valdivia-recommendations-header .section-kicker': 'Recomendaciones', 
       '.valdivia-recommendations-header h2': 'Descubre<br><em>Valdivia.</em>',
-      '.valdivia-card:nth-child(1) h3': 'Ríos y<br>navegación', 
-      '.valdivia-card:nth-child(1) p': 'Los ríos Calle-Calle, Valdivia y Cau-Cau son el corazón de la ciudad. Navega hasta la Isla Teja o cruza en el histórico ferry fluvial.', 
-      '.valdivia-card:nth-child(1) .valdivia-card-link': 'Saber más <span aria-hidden="true">↗</span>', 
-      '.valdivia-card:nth-child(2) h3': 'Bosque<br>templado', 
-      '.valdivia-card:nth-child(2) p': 'El bosque valdiviano es uno de los más biodiversos del planeta. Camina entre arrayanes, coigües y musgos centenarios a minutos del centro.', 
-      '.valdivia-card:nth-child(2) .valdivia-card-link': 'Saber más <span aria-hidden="true">↗</span>', 
-      '.valdivia-card:nth-child(3) h3': 'Gastronomía<br>local', 
-      '.valdivia-card:nth-child(3) p': 'Desde mariscos frescos hasta cocina alemana-valdiviana. Prueba el kuchen, el cordero al palo y los productos del mar en los restaurantes del centro.', 
-      '.valdivia-card:nth-child(3) .valdivia-card-link': 'Saber más <span aria-hidden="true">↗</span>', 
-      '.valdivia-card:nth-child(4) h3': 'Cultura<br>e historia', 
-      '.valdivia-card:nth-child(4) p': 'Visita el Museo Antropológico, los murales del barrio Flack y la Feria Fluvial. Valdivia tiene una escena cultural vibrante y una historia que se siente en cada calle.', 
-      '.valdivia-card:nth-child(4) .valdivia-card-link': 'Saber más <span aria-hidden="true">↗</span>'
+      // Destinations nav tooltips
+      '.destinations-nav-item:nth-child(1)': 'Bosques',
+      '.destinations-nav-item:nth-child(2)': 'Volcán',
+      '.destinations-nav-item:nth-child(3)': 'Humedales',
+      '.destinations-nav-item:nth-child(4)': 'Cervezas',
+      '.destinations-nav-item:nth-child(5)': 'Historia',
+      // Destination sections
+      '#alerce-costero-title': 'Alerce Costero: <span class="destination-title-accent">bosques milenarios</span> junto al Pacífico',
+      '#alerce-costero .destination-description': 'Entra a uno de los bosques templados más biodiversos del planeta. El Parque Nacional Alerce Costero es hogar de árboles milenarios, senderos entre arrayanes y coigües, y paisajes costeros únicos en la Región de Los Ríos.',
+      '#alerce-costero .destination-link': 'Conocer más <span aria-hidden="true">↗</span>',
+      '#mocho-choshuenco-title': 'Mocho Choshuenco: montañas, <span class="destination-title-accent">nieve y aventura</span>',
+      '#mocho-choshuenco .destination-description': 'Asciende al cráter de este volcán activo y descubre una laguna turquesa en su cumbre. La Reserva Nacional Mocho Choshuenco ofrece trekking, deportes de invierno y vistas panorámicas de los Andes y el océano Pacífico.',
+      '#mocho-choshuenco .destination-link': 'Conocer más <span aria-hidden="true">↗</span>',
+      '#punucapa-title': 'Punucapa: <span class="destination-title-accent">humedales</span>, ríos y naturaleza',
+      '#punucapa .destination-description': 'Navega los humedales de Punucapa, un ecosistema único donde los ríos encuentran el bosque. Observa aves nativas, explora senderos entre vegetación acuática y descubre la biodiversidad de los humedales valdivianos.',
+      '#punucapa .destination-link': 'Conocer más <span aria-hidden="true">↗</span>',
+      '#cervezas-title': 'La <span class="destination-title-accent">tradición cervecera</span> de Valdivia',
+      '#cervezas .destination-description': 'Valdivia es la cuna de la cerveza artesanal en Chile. Descubre la herencia cervecera alemana-valdiviana, visita cervecerías históricas como Kunstmann y Schopfloch, y degusta cervezas únicas hechas con ingredientes locales.',
+      '#cervezas .destination-link': 'Conocer más <span aria-hidden="true">↗</span>',
+      '#fuerte-niebla-title': 'Fuerte Niebla: <span class="destination-title-accent">historia</span> junto al mar',
+      '#fuerte-niebla .destination-description': 'Visita el Castillo de Niebla, una de las fortalezas coloniales españolas más importantes de Sudamérica. Recorre sus murallas, museos y cañones mientras disfrutas vistas panorámicas de la bahía de Valdivia y el río Calle-Calle.',
+      '#fuerte-niebla .destination-link': 'Conocer más <span aria-hidden="true">↗</span>'
     }
   },
   contacto: {
     en: {
+      '.contact-hero .inner-intro .section-kicker': 'Valdivia Bike Fest / Contact',
       '.contact-hero .inner-intro h1': "Let's talk<br>about the <em>route.</em>",
       '.contact-hero .inner-intro > p:last-child': 'Have a question about the event, registration, or missing information? Write to us from Valdivia.',
       '.contact-form-title': 'Send us <em>a message</em>',
       'label[for="contact-name"]': 'Name',
       'label[for="contact-email"]': 'Email',
       'label[for="contact-message"]': 'Message',
-      '.contact-form .button': 'Send message <span>↗</span>'
+      '.contact-form .button': 'Send message <span>↗</span>',
+      '.contact-data-strip .contact-data:nth-child(1) span:first-child': 'DATE',
+      '.contact-data-strip .contact-data:nth-child(1) span:last-child': '10 — 14 March 2027',
+      '.contact-data-strip .contact-data:nth-child(2) span:first-child': 'VENUE',
+      '.contact-data-strip .contact-data:nth-child(2) span:last-child': 'Valdivia, Chile',
+      '.contact-data-strip .contact-data:nth-child(3) span:first-child': 'START',
+      '.contact-data-strip .contact-data:nth-child(3) span:last-child': 'Complejo Deportivo ASENAV',
+      '.contact-data-strip .contact-data:nth-child(4) span:first-child': 'CIRCUITS',
+      '.contact-data-strip .contact-data:nth-child(4) span:last-child': 'XCO / XCC',
+      '.contact-data-strip .contact-data:nth-child(5) span:first-child': 'OFFICIAL START',
+      '.contact-data-strip .contact-data:nth-child(5) span:last-child': 'TBC',
+      '.contact-channels-title': 'Direct<br><em>channels</em>',
+      '.contact-channel:nth-child(1) span:first-child': 'EMAIL',
+      '.contact-channel:nth-child(2) span:first-child': 'INSTAGRAM'
     },
     es: {
+      '.contact-hero .inner-intro .section-kicker': 'Valdivia Bike Fest / Contacto',
       '.contact-hero .inner-intro h1': 'Hablemos<br>de la <em>ruta.</em>',
       '.contact-hero .inner-intro > p:last-child': '¿Tienes una pregunta sobre el evento, la inscripción o la información que falta? Escríbenos y te responderemos desde Valdivia.',
       '.contact-form-title': 'Escríbenos <em>un mensaje</em>',
       'label[for="contact-name"]': 'Nombre',
       'label[for="contact-email"]': 'Email',
       'label[for="contact-message"]': 'Mensaje',
-      '.contact-form .button': 'Enviar mensaje <span>↗</span>'
+      '.contact-form .button': 'Enviar mensaje <span>↗</span>',
+      '.contact-data-strip .contact-data:nth-child(1) span:first-child': 'FECHA',
+      '.contact-data-strip .contact-data:nth-child(1) span:last-child': '10 — 14 marzo 2027',
+      '.contact-data-strip .contact-data:nth-child(2) span:first-child': 'SEDE',
+      '.contact-data-strip .contact-data:nth-child(2) span:last-child': 'Valdivia, Chile',
+      '.contact-data-strip .contact-data:nth-child(3) span:first-child': 'LARGADA',
+      '.contact-data-strip .contact-data:nth-child(3) span:last-child': 'Complejo Deportivo ASENAV',
+      '.contact-data-strip .contact-data:nth-child(4) span:first-child': 'CIRCUITOS',
+      '.contact-data-strip .contact-data:nth-child(4) span:last-child': 'XCO / XCC',
+      '.contact-data-strip .contact-data:nth-child(5) span:first-child': 'LARGADA OFICIAL',
+      '.contact-data-strip .contact-data:nth-child(5) span:last-child': 'Por confirmar',
+      '.contact-channels-title': 'Canales<br><em>directos</em>',
+      '.contact-channel:nth-child(1) span:first-child': 'CORREO',
+      '.contact-channel:nth-child(2) span:first-child': 'INSTAGRAM'
     }
   }
 };
@@ -149,6 +435,10 @@ function setupMobileMenu() {
     const isOpen = toggle.getAttribute('aria-expanded') === 'true';
     toggle.setAttribute('aria-expanded', String(!isOpen));
     menu.hidden = isOpen;
+    // Update aria-label based on current language and state
+    toggle.setAttribute('aria-label', currentLanguage === 'es'
+      ? (!isOpen ? 'Cerrar menú' : 'Abrir menú')
+      : (!isOpen ? 'Close menu' : 'Open menu'));
   });
   menu.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
     toggle.setAttribute('aria-expanded', 'false');
@@ -164,7 +454,7 @@ function setupLanguageToggle() {
     toggle = document.createElement('button');
     toggle.className = 'language-toggle';
     toggle.type = 'button';
-    toggle.setAttribute('aria-label', 'Cambiar idioma');
+    toggle.setAttribute('aria-label', 'Change language');
     toggle.dataset.languageToggle = '';
     toggle.innerHTML = '<span data-language-label>EN</span><span class="language-dot"></span>';
     actions.insertBefore(toggle, actions.firstChild);
@@ -173,20 +463,69 @@ function setupLanguageToggle() {
     currentLanguage = currentLanguage === 'es' ? 'en' : 'es';
     document.documentElement.lang = currentLanguage;
     document.querySelector('[data-language-label]').textContent = currentLanguage === 'es' ? 'EN' : 'ES';
+    
+    // Update aria-label of language toggle
+    toggle.setAttribute('aria-label', currentLanguage === 'es' ? 'Cambiar idioma' : 'Change language');
+    
+    // Update data-i18n elements (countdown labels)
     document.querySelectorAll('[data-i18n]').forEach((node) => {
       const key = node.dataset.i18n;
       node.textContent = translations[currentLanguage][key];
     });
+    
+    // Update page-specific copy
     const isIndex = window.location.pathname.endsWith('/') || window.location.pathname.endsWith('index.html');
     const pageName = window.location.pathname.split('/').pop().replace('.html', '') || 'index';
     const copy = (isIndex ? pageCopy.index : pageCopy[pageName])?.[currentLanguage] || {};
     Object.entries(copy).forEach(([selector, text]) => {
       document.querySelectorAll(selector).forEach((node) => { node.innerHTML = text; });
     });
+    
+    // Update common elements across all pages
     const common = currentLanguage === 'en'
-      ? { '.main-nav a:nth-child(1)': 'Event', '.main-nav a:nth-child(2)': 'Route & schedule', '.main-nav a:nth-child(3)': 'Results', '.main-nav a:nth-child(4)': 'Valdivia', '.main-nav a:nth-child(5)': 'Contact', '[data-registration]': 'Register <span aria-hidden="true">↗</span>' }
-      : { '.main-nav a:nth-child(1)': 'Evento', '.main-nav a:nth-child(2)': 'Ruta y horario', '.main-nav a:nth-child(3)': 'Resultados', '.main-nav a:nth-child(4)': 'Valdivia', '.main-nav a:nth-child(5)': 'Contacto', '[data-registration]': 'Inscríbete <span aria-hidden="true">↗</span>' };
-    Object.entries(common).forEach(([selector, text]) => document.querySelectorAll(selector).forEach((node) => { node.innerHTML = text; }));
+      ? { 
+          '.main-nav a:nth-child(1)': 'Event', 
+          '.main-nav a:nth-child(2)': 'Route & schedule', 
+          '.main-nav a:nth-child(3)': 'Results', 
+          '.main-nav a:nth-child(4)': 'Valdivia', 
+          '.main-nav a:nth-child(5)': 'Contact',
+          '.mobile-menu nav a:nth-child(1)': 'Event',
+          '.mobile-menu nav a:nth-child(2)': 'Route & schedule',
+          '.mobile-menu nav a:nth-child(3)': 'Results',
+          '.mobile-menu nav a:nth-child(4)': 'Valdivia',
+          '.mobile-menu nav a:nth-child(5)': 'Contact',
+          '[data-registration]': 'Register <span aria-hidden="true">↗</span>',
+          '.menu-toggle': null // handled separately for aria-label
+        }
+      : { 
+          '.main-nav a:nth-child(1)': 'Evento', 
+          '.main-nav a:nth-child(2)': 'Ruta y horario', 
+          '.main-nav a:nth-child(3)': 'Resultados', 
+          '.main-nav a:nth-child(4)': 'Valdivia', 
+          '.main-nav a:nth-child(5)': 'Contacto',
+          '.mobile-menu nav a:nth-child(1)': 'Evento',
+          '.mobile-menu nav a:nth-child(2)': 'Ruta y horario',
+          '.mobile-menu nav a:nth-child(3)': 'Resultados',
+          '.mobile-menu nav a:nth-child(4)': 'Valdivia',
+          '.mobile-menu nav a:nth-child(5)': 'Contacto',
+          '[data-registration]': 'Inscríbete <span aria-hidden="true">↗</span>',
+          '.menu-toggle': null // handled separately for aria-label
+        };
+    
+    Object.entries(common).forEach(([selector, text]) => {
+      if (text !== null) {
+        document.querySelectorAll(selector).forEach((node) => { node.innerHTML = text; });
+      }
+    });
+    
+    // Update menu toggle aria-label
+    const menuToggle = document.querySelector('.menu-toggle');
+    if (menuToggle) {
+      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-label', currentLanguage === 'es' 
+        ? (isExpanded ? 'Cerrar menú' : 'Abrir menú')
+        : (isExpanded ? 'Close menu' : 'Open menu'));
+    }
   });
 }
 
@@ -375,3 +714,12 @@ setupValdiviaCarousel();
 setupDestinationsNav();
 setupScrollAnimations();
 setupContactLightbox();
+
+// Actualizar todos los enlaces de inscripción con la URL centralizada
+function updateRegistrationLinks() {
+  document.querySelectorAll('[data-registration]').forEach(link => {
+    link.href = REGISTRATION_URL;
+  });
+}
+
+updateRegistrationLinks();
