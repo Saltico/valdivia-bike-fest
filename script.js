@@ -2,9 +2,8 @@
 const REGISTRATION_URL = 'https://www.eventrid.cl/eventos/mvk/valdivia-bikefest-2026';
 
 const routeData = {
-  start: { index: '01 / 03', title: 'Salida', description: 'Largada y llegada en el Complejo Deportivo Asenav (Alonso Doce 998, Valdivia). Revisa el horario de convocatoria y llega con tiempo para preparar tu bicicleta.', distance: '2.92 km', elevation: '74 m', time: 'Dom 14 mar, 14:10 hrs' },
-  forest: { index: '02 / 03', title: 'Circuito', description: 'Circuito Valdivia Bike Fest: 2.92 km con 74 metros de desnivel. El terreno cambia aquí. La lectura de la ruta, el ritmo y la capacidad de escuchar tu bicicleta se vuelven parte de la carrera.', distance: '2.92 km', elevation: '74 m', time: 'Por confirmar' },
-  finish: { index: '03 / 03', title: 'Meta', description: 'La última curva se disfruta distinto cuando conoces el camino. Llegada en el Complejo Deportivo Asenav, el mismo punto de partida.', distance: '2.92 km', elevation: '74 m', time: 'Dom 14 mar' }
+  xco: { index: '01 / 02', title: 'XCO', description: 'Cross-Country Olímpico con largada y llegada en el Complejo Deportivo ASENAV. Circuito de ~3,6 km y ~170 m de desnivel por vuelta, con un punto de abastecimiento y sectores para público.', distance: '~3,6 km / vuelta', elevation: '~170 m / vuelta', time: 'Por confirmar' },
+  xcc: { index: '02 / 02', title: 'XCC', description: 'Short Track en el Complejo Deportivo ASENAV: ~0,81 km y ~18 m de desnivel por vuelta, con ~20 minutos de duración. Referencia 2026: ~10 vueltas Elite Masculino y ~9 Elite Femenino.', distance: '~0,81 km / vuelta', elevation: '~18 m / vuelta', time: 'Por confirmar' }
 };
 
 const translations = {
@@ -36,14 +35,12 @@ const pageCopy = {
       
       '#route-title': 'Read the terrain<br>before you <em>ride it.</em>',
       '.route-header-copy': 'Explore a route reference and discover how a VBF race day is organized. Official distance, elevation, and schedule details will be published here.',
-      '.route-tab:nth-child(1) strong': 'Start',
-      '.route-tab:nth-child(1) small': 'The pulse before the forest',
-      '.route-tab:nth-child(2) strong': 'Forest',
-      '.route-tab:nth-child(2) small': 'The terrain changes here',
-      '.route-tab:nth-child(3) strong': 'Finish',
-      '.route-tab:nth-child(3) small': 'Where the effort ends',
-      '.route-detail-top span:last-child': 'REFERENCE',
-      '.detail-footer span': 'Official data will be updated on this page.',
+      '.route-tab:nth-child(1) strong': 'XCO',
+      '.route-tab:nth-child(1) small': 'Cross-Country Olympic · ~3.6 km per lap',
+      '.route-tab:nth-child(2) strong': 'XCC',
+      '.route-tab:nth-child(2) small': 'Short Track · ~0.81 km per lap',
+      '.route-detail-top span:last-child': 'OFFICIAL',
+      '.detail-footer span': 'Schedule and lap counts per category are defined at the technical meeting.',
       '.detail-footer a': 'View full route <span aria-hidden="true">↗</span>',
       
       '#schedule-title': 'Everything<br>in its <em>time.</em>',
@@ -108,14 +105,12 @@ const pageCopy = {
       
       '#route-title': 'Lee el terreno<br>antes de <em>vivirlo.</em>',
       '.route-header-copy': 'Explora una referencia del trazado y descubre cómo se organiza una jornada VBF. Los datos oficiales de distancia, desnivel y horarios se publicarán aquí.',
-      '.route-tab:nth-child(1) strong': 'Salida',
-      '.route-tab:nth-child(1) small': 'El pulso antes del bosque',
-      '.route-tab:nth-child(2) strong': 'Bosque',
-      '.route-tab:nth-child(2) small': 'El terreno cambia aquí',
-      '.route-tab:nth-child(3) strong': 'Meta',
-      '.route-tab:nth-child(3) small': 'Donde termina el esfuerzo',
-      '.route-detail-top span:last-child': 'REFERENCIA',
-      '.detail-footer span': 'Los datos oficiales se actualizarán en esta página.',
+      '.route-tab:nth-child(1) strong': 'XCO',
+      '.route-tab:nth-child(1) small': 'Cross-Country Olímpico · ~3,6 km por vuelta',
+      '.route-tab:nth-child(2) strong': 'XCC',
+      '.route-tab:nth-child(2) small': 'Short Track · ~0,81 km por vuelta',
+      '.route-detail-top span:last-child': 'OFICIAL',
+      '.detail-footer span': 'Horarios y vueltas por categoría se definen en el congreso técnico.',
       '.detail-footer a': 'Ver ruta completa <span aria-hidden="true">↗</span>',
       
       '#schedule-title': 'Todo en<br><em>su momento.</em>',
