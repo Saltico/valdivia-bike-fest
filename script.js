@@ -322,11 +322,16 @@ const pageCopy = {
       '.event-hero h1': 'Two circuits.<br><em>One venue.</em>', 
       '.event-hero .inner-intro > p:last-child': 'Everything you need to know about the 2027 edition: dates, circuits, categories, schedule, and registration.',
       // 2. Data board
-      '.event-data-item:nth-child(1) .event-data-label': 'Date',
-      '.event-data-item:nth-child(2) .event-data-label': 'Venue',
-      '.event-data-item:nth-child(3) .event-data-label': 'Formats',
-      '.event-data-item:nth-child(4) .event-data-label': 'First activity',
-      '.event-data-item:nth-child(5) .event-data-label': 'UCI points',
+      '.contact-race-item:nth-child(1) .contact-race-label': 'Date',
+      '.contact-race-item:nth-child(1) .contact-race-value': '10–14 March 2027',
+      '.contact-race-item:nth-child(2) .contact-race-label': 'Venue',
+      '.contact-race-item:nth-child(2) .contact-race-value': 'C.D. ASENAV, Valdivia',
+      '.contact-race-item:nth-child(3) .contact-race-label': 'First activity',
+      '.contact-race-item:nth-child(3) .contact-race-value': 'Wed 10 Mar — 9:00 AM',
+      '.contact-race-item:nth-child(4) .contact-race-label': 'Formats',
+      '.contact-race-item:nth-child(4) .contact-race-value': 'XCO / XCC',
+      '.contact-race-item:nth-child(5) .contact-race-label': 'UCI points',
+      '.contact-race-item:nth-child(5) .contact-race-value': 'World ranking',
       // 3. Formats / Circuits
       '.event-formats-section .section-kicker': 'Race formats',
       '.event-formats-section h2': 'Two circuits.<br><em>One venue.</em>',
@@ -385,11 +390,16 @@ const pageCopy = {
       '.event-hero h1': 'Dos circuitos.<br><em>Una sede.</em>', 
       '.event-hero .inner-intro > p:last-child': 'Todo lo que necesitas saber sobre la edición 2027: fechas, circuitos, categorías, programa e inscripción.',
       // 2. Datos clave
-      '.event-data-item:nth-child(1) .event-data-label': 'Fecha',
-      '.event-data-item:nth-child(2) .event-data-label': 'Sede',
-      '.event-data-item:nth-child(3) .event-data-label': 'Formatos',
-      '.event-data-item:nth-child(4) .event-data-label': 'Primera actividad',
-      '.event-data-item:nth-child(5) .event-data-label': 'Puntos UCI',
+      '.contact-race-item:nth-child(1) .contact-race-label': 'Fecha',
+      '.contact-race-item:nth-child(1) .contact-race-value': '10–14 marzo 2027',
+      '.contact-race-item:nth-child(2) .contact-race-label': 'Sede',
+      '.contact-race-item:nth-child(2) .contact-race-value': 'C.D. ASENAV, Valdivia',
+      '.contact-race-item:nth-child(3) .contact-race-label': 'Primera actividad',
+      '.contact-race-item:nth-child(3) .contact-race-value': 'Mié 10 mar — 09:00 hrs',
+      '.contact-race-item:nth-child(4) .contact-race-label': 'Formatos',
+      '.contact-race-item:nth-child(4) .contact-race-value': 'XCO / XCC',
+      '.contact-race-item:nth-child(5) .contact-race-label': 'Puntos UCI',
+      '.contact-race-item:nth-child(5) .contact-race-value': 'Ranking mundial',
       // 3. Formatos / Circuitos
       '.event-formats-section .section-kicker': 'Formatos de competencia',
       '.event-formats-section h2': 'Dos circuitos.<br><em>Una sede.</em>',
@@ -821,50 +831,6 @@ function setupScrollAnimations() {
   animatedElements.forEach((element) => observer.observe(element));
 }
 
-function setupContactLightbox() {
-  const lightbox = document.getElementById('contact-lightbox');
-  if (!lightbox) return;
-  
-  const gallery = document.querySelector('.contact-gallery');
-  const triggers = gallery ? gallery.querySelectorAll('[data-gallery-trigger]') : [];
-  const closeButtons = lightbox.querySelectorAll('[data-lightbox-close]');
-  const lightboxImage = lightbox.querySelector('.contact-lightbox-image');
-  
-  if (!triggers.length || !lightboxImage) return;
-  
-  const openLightbox = (imgSrc, imgAlt) => {
-    lightboxImage.src = imgSrc;
-    lightboxImage.alt = imgAlt || '';
-    lightbox.hidden = false;
-    document.body.style.overflow = 'hidden';
-  };
-  
-  const closeLightbox = () => {
-    lightbox.hidden = true;
-    lightboxImage.src = '';
-    document.body.style.overflow = '';
-  };
-  
-  triggers.forEach((trigger) => {
-    trigger.addEventListener('click', () => {
-      const img = trigger.querySelector('img');
-      if (img) {
-        openLightbox(img.src, img.alt);
-      }
-    });
-  });
-  
-  closeButtons.forEach((btn) => {
-    btn.addEventListener('click', closeLightbox);
-  });
-  
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && !lightbox.hidden) {
-      closeLightbox();
-    }
-  });
-}
-
 setupMobileMenu();
 setupLanguageToggle();
 setupRouteTabs();
@@ -873,7 +839,6 @@ setupHeaderScroll();
 setupValdiviaCarousel();
 setupDestinationsNav();
 setupScrollAnimations();
-setupContactLightbox();
 
 // Actualizar todos los enlaces de inscripción con la URL centralizada
 function updateRegistrationLinks() {
