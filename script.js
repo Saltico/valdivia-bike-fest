@@ -654,19 +654,108 @@ function setupMobileMenu() {
   const toggle = document.querySelector('.menu-toggle');
   const menu = document.querySelector('#mobile-menu');
   if (!toggle || !menu) return;
+  const backdrop = document.querySelector('.menu-backdrop');
+  let focusTrapHandler = null;
+
+  function getFocusableElements() {
+    const els = menu.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])');
+    return [toggle, ...els];
+  }
+
+  function openMenu() {
+    menu.hidden = false;
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        menu.classList.add('is-open');
+        toggle.classList.add('is-active');
+        if (backdrop) backdrop.classList.add('is-open');
+      });
+    });
+    toggle.setAttribute('aria-expanded', 'true');
+    toggle.setAttribute('aria-label', currentLanguage === 'es'
+      ? 'Cerrar menú'
+      : 'Close menu');
+    document.body.style.overflow = 'hidden';
+    const firstLink = menu.querySelector('nav a');
+    if (firstLink) firstLink.focus();
+    focusTrapHandler = (e) => {
+      if (e.key !== 'Tab') return;
+      const focusable = getFocusableElements();
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey) {
+        if (document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        }
+      } else {
+        if (document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    };
+    document.addEventListener('keydown', focusTrapHandler);
+  }
+
+  function closeMenu() {
+    menu.classList.remove('is-open');
+    toggle.classList.remove('is-active');
+    if (backdrop) backdrop.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', currentLanguage === 'es'
+      ? 'Abrir menú'
+      : 'Open menu');
+    document.body.style.overflow = '';
+    if (focusTrapHandler) {
+      document.removeEventListener('keydown', focusTrapHandler);
+      focusTrapHandler = null;
+    }
+    toggle.focus();
+    let handled = false;
+    function done() {
+      if (handled) return;
+      handled = true;
+      if (!menu.classList.contains('is-open')) menu.hidden = true;
+    }
+    menu.addEventListener('transitionend', function handler(e) {
+      if (e.target !== menu) return;
+      menu.removeEventListener('transitionend', handler);
+      done();
+    });
+    setTimeout(done, 400);
+  }
+
   toggle.addEventListener('click', () => {
     const isOpen = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!isOpen));
-    menu.hidden = isOpen;
-    // Update aria-label based on current language and state
-    toggle.setAttribute('aria-label', currentLanguage === 'es'
-      ? (!isOpen ? 'Cerrar menú' : 'Abrir menú')
-      : (!isOpen ? 'Close menu' : 'Open menu'));
+    if (isOpen) closeMenu(); else openMenu();
   });
+
+  if (backdrop) {
+    backdrop.addEventListener('click', closeMenu);
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') closeMenu();
+  });
+
   menu.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
-    toggle.setAttribute('aria-expanded', 'false');
-    menu.hidden = true;
+    closeMenu();
   }));
+
+  // Close menu if viewport resizes past the mobile breakpoint
+  const mql = window.matchMedia('(max-width: 760px)');
+  function handleResize(e) {
+    if (!e.matches && toggle.getAttribute('aria-expanded') === 'true') {
+      closeMenu();
+    }
+  }
+  if (mql.addEventListener) {
+    mql.addEventListener('change', handleResize);
+  } else if (mql.addListener) {
+    mql.addListener(handleResize);
+  }
 }
 
 function setupLanguageToggle() {
