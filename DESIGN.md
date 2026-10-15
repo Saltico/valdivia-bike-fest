@@ -157,9 +157,14 @@ The form language is square and instrument-like: buttons, panels, boards, lists,
 - **Style:** The homepage has a three-item tablist for Salida, Bosque, and Meta beside a detail panel. The active/hover tab becomes turquoise with black text; the detail panel updates title, description, index, and three data values.
 - **State:** Initial state is `Salida`; all route metrics are visibly `por definir` until official data is supplied. The standalone route page repeats the illustrative route board and reference framing.
 
+### Hero Crossfade
+- **Pattern:** Any `[data-crossfade]` container holding multiple `.carousel-img` images cycles the `.active` class at the interval defined by `data-interval` (default 5000 ms). The resultados page hero uses 8000 ms.
+- **Reduced motion:** When `prefers-reduced-motion: reduce` matches, the interval does not start and only the first image (with `.active`) is shown.
+- **Overlay:** The resultados hero uses the same top-to-bottom gradient as the event hero: `linear-gradient(180deg, rgba(26,26,26,.25) 0%, rgba(26,26,26,.5) 40%, rgba(26,26,26,.92) 100%)`.
+
 ### Status, Results, and Place Boards
 - **Status:** A full-width turquoise strip carries a live-dot label, countdown cells, and a right/last-line status message. With no date, it remains the explicit `Fecha por anunciar` state.
-- **Results:** A bordered board uses a pale grid field, a plus marker, `Resultados por publicar`, and footer categories. It is an intentional empty state, not a data table.
+- **Results:** The homepage keeps an intentional empty-state board with a dual photograph grid (`resultados_hombre.avif` + `resultados_mujer.avif`, grayscale). The standalone resultados page adds a full-bleed hero crossfade (the two supplied race images rotating every 8 s via `data-crossfade data-interval="8000"`) over a dark gradient, then a demo data board with XCO/XCC tabs, a category chip row, and a results table. The demo board is wrapped in `.is-demo` with a turquoise `DATOS DE PRUEBA` badge and a visible disclaimer note. Both boards share the same bordered, sharp-cornered, hairline-ruled visual language.
 - **Place:** Valdivia uses supplied Chile imagery, a clipped turquoise river cue, map marks, and a white copy panel.
 
 ### Accessibility & State Notes
@@ -172,7 +177,7 @@ The form language is square and instrument-like: buttons, panels, boards, lists,
 - Replace every `https://example.com/registro-valdivia-bike-fest` value on the registration CTAs with the external registration platform URL. Until then, `script.js` prevents navigation and shows a replacement reminder toast.
 - Set `data-date` on the homepage countdown to the official event date/time. Until then the countdown remains inactive and the announcement state is shown.
 - Replace `routeData` values and the route-page/reference SVG with approved distance, elevation, timing, access, and route geometry. Current values intentionally read `por definir` and `referencia`.
-- Replace the results empty boards with the supplied official results source, categories, times, and post-race publishing behavior.
+- Replace the demo results board on `resultados.html` (marked with `.is-demo`, the `DATOS DE PRUEBA` badge, and the HTML comment `<!-- DATOS DE PRUEBA: reemplazar por fuente oficial de cronometraje -->`) with the official timing source. Remove the `.results-panels.is-demo` block and either restore an empty-state pattern or render the official data. The hero crossfade uses `img/resultados_mujer.avif` and `img/resultados_hombre.avif` (8 s interval, 1.5 s fade).
 - Supplied assets now live in `/img`: `carrera.avif` anchors the hero, `ruta.avif` the route page, `resultados_hombre.avif` and `resultados_mujer.avif` the results board, `chile.avif` the Valdivia surface, and `logo cropped.png` the current logo placeholder. Additional supplied images remain available for future sections.
 - Replace the schema and social placeholders (`example.com`), the generic Instagram destination, and any provisional event copy before publishing.
 

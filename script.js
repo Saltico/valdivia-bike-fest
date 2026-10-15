@@ -14,6 +14,43 @@ const translations = {
 let currentLanguage = 'es';
 let toastTimer;
 
+const demoResultsData = {
+  xco: [
+    { pos:1, dorsal:101, name:"Matías Castillo", club:"VBK Team", cat:"elite-m", catLabel:"Elite M", time:"1:24:32", dif:"—" },
+    { pos:2, dorsal:102, name:"Felipe Vera", club:"MTB Valdivia", cat:"elite-m", catLabel:"Elite M", time:"1:25:44", dif:"+1:12" },
+    { pos:3, dorsal:103, name:"Tomás Oyarzún", club:"Pedal Sur", cat:"elite-m", catLabel:"Elite M", time:"1:26:18", dif:"+1:46" },
+    { pos:4, dorsal:104, name:"Andrés Muñoz", club:"Team Austral", cat:"sub23-m", catLabel:"Sub23 M", time:"1:27:05", dif:"+2:33" },
+    { pos:5, dorsal:105, name:"Joaquín Cárdenas", club:"CC Osorno", cat:"sub23-m", catLabel:"Sub23 M", time:"1:28:11", dif:"+3:39" },
+    { pos:6, dorsal:106, name:"Bastián Leal", club:"VBK Team", cat:"junior-m", catLabel:"Junior M", time:"1:29:40", dif:"+5:08" },
+    { pos:7, dorsal:107, name:"Rocío Navarro", club:"MTB Valdivia", cat:"elite-f", catLabel:"Elite F", time:"1:30:22", dif:"+5:50" },
+    { pos:8, dorsal:108, name:"Javiera Salinas", club:"Pedal Sur", cat:"elite-f", catLabel:"Elite F", time:"1:31:05", dif:"+6:33" },
+    { pos:9, dorsal:109, name:"Camila Ponce", club:"Team Austral", cat:"sub23-f", catLabel:"Sub23 F", time:"1:32:48", dif:"+8:16" },
+    { pos:10, dorsal:110, name:"Isidora Araneda", club:"CC Osorno", cat:"junior-f", catLabel:"Junior F", time:"1:33:29", dif:"+8:57" },
+    { pos:11, dorsal:111, name:"Héctor Barría", club:"VBK Team", cat:"master-a", catLabel:"Master A", time:"1:34:55", dif:"+10:23" },
+    { pos:12, dorsal:112, name:"Sergio Mansilla", club:"Pedal Sur", cat:"master-b", catLabel:"Master B", time:"1:35:40", dif:"+11:08" },
+    { pos:13, dorsal:113, name:"Patricio Oelckers", club:"MTB Valdivia", cat:"master-c", catLabel:"Master C", time:"1:38:12", dif:"+13:40" },
+    { pos:14, dorsal:114, name:"Renato Soto", club:"Team Austral", cat:"master-d", catLabel:"Master D", time:"1:41:03", dif:"+16:31" },
+    { pos:15, dorsal:115, name:"Nicolás Paredes", club:"CC Osorno", cat:"open", catLabel:"Open", time:"1:42:20", dif:"+17:48" }
+  ],
+  xcc: [
+    { pos:1, dorsal:201, name:"Ignacio Delgado", club:"VBK Team", cat:"elite-m", catLabel:"Elite M", time:"19:42", dif:"—" },
+    { pos:2, dorsal:202, name:"Alonso Bahamonde", club:"MTB Valdivia", cat:"elite-m", catLabel:"Elite M", time:"19:58", dif:"+0:16" },
+    { pos:3, dorsal:203, name:"Vicente Arroyo", club:"Pedal Sur", cat:"elite-m", catLabel:"Elite M", time:"20:11", dif:"+0:29" },
+    { pos:4, dorsal:204, name:"Dante Ojeda", club:"Team Austral", cat:"sub23-m", catLabel:"Sub23 M", time:"20:25", dif:"+0:43" },
+    { pos:5, dorsal:205, name:"Lucas Villalobos", club:"CC Osorno", cat:"sub23-m", catLabel:"Sub23 M", time:"20:40", dif:"+0:58" },
+    { pos:6, dorsal:206, name:"Benjamín Soto", club:"VBK Team", cat:"junior-m", catLabel:"Junior M", time:"20:55", dif:"+1:13" },
+    { pos:7, dorsal:207, name:"Florencia Orellana", club:"MTB Valdivia", cat:"elite-f", catLabel:"Elite F", time:"21:08", dif:"+1:26" },
+    { pos:8, dorsal:208, name:"Antonia Riquelme", club:"Pedal Sur", cat:"elite-f", catLabel:"Elite F", time:"21:22", dif:"+1:40" },
+    { pos:9, dorsal:209, name:"Emilia Cárdenas", club:"Team Austral", cat:"sub23-f", catLabel:"Sub23 F", time:"21:45", dif:"+2:03" },
+    { pos:10, dorsal:210, name:"Martina Fuentes", club:"CC Osorno", cat:"junior-f", catLabel:"Junior F", time:"22:01", dif:"+2:19" },
+    { pos:11, dorsal:211, name:"Rodrigo Millar", club:"VBK Team", cat:"master-a", catLabel:"Master A", time:"22:30", dif:"+2:48" },
+    { pos:12, dorsal:212, name:"Eduardo Ulloa", club:"Pedal Sur", cat:"master-b", catLabel:"Master B", time:"22:55", dif:"+3:13" },
+    { pos:13, dorsal:213, name:"Carlos Huenchul", club:"MTB Valdivia", cat:"master-c", catLabel:"Master C", time:"23:30", dif:"+3:48" },
+    { pos:14, dorsal:214, name:"Mario Trejo", club:"Team Austral", cat:"master-d", catLabel:"Master D", time:"24:12", dif:"+4:30" },
+    { pos:15, dorsal:215, name:"Sebastián Calfu", club:"CC Osorno", cat:"open", catLabel:"Open", time:"24:48", dif:"+5:06" }
+  ]
+};
+
 const pageCopy = {
   index: {
     en: {
@@ -453,29 +490,45 @@ const pageCopy = {
     }
   },
   resultados: {
-    en: { 
-      '.inner-intro .section-kicker': 'Valdivia Bike Fest / Results',
-      '.inner-intro h1': 'Your mark<br><em>stays here.</em>', 
-      '.inner-intro > p:last-child': 'The official board will go live after each start. Come back to find your time and category result.',
-      '.results-page-board .results-board-head span:first-child': 'VBF / RESULTS',
-      '.results-page-board .results-board-head span:last-child': 'COMING SOON',
-      '.results-page-board .results-empty strong': 'Results<br>to be published',
-      '.results-page-board .results-empty p': 'The board activates after the race.',
-      '.results-page-board .results-board-foot span:nth-child(1)': 'XCO',
-      '.results-page-board .results-board-foot span:nth-child(2)': 'XCC / SHORT TRACK',
-      '.results-page-board .results-board-foot span:nth-child(3)': 'CATEGORIES'
+    en: {
+      '.results-hero .section-kicker': 'Valdivia Bike Fest / Results 2027',
+      '.results-hero h1': 'Your mark<br><em>goes here.</em>',
+      '.results-hero .inner-intro > p:last-child': 'The official board goes live after each start. Come back to find your time and check your category result.',
+      '.results-demo-badge': 'DEMO DATA',
+      '.results-demo-note': 'Demo table with fictitious data. The official board activates after each start.',
+      '.results-board-head span:first-child': 'VBF / RESULTS',
+      '.results-board-head span:last-child': 'LIVE \u00b7 DEMO',
+      '[data-i18n="results-chip-all"]': 'All',
+      '.results-table thead th:nth-child(1)': 'POS',
+      '.results-table thead th:nth-child(2)': 'BIB',
+      '.results-table thead th:nth-child(3)': 'RIDER',
+      '.results-table thead th:nth-child(4)': 'CLUB',
+      '.results-table thead th:nth-child(5)': 'CATEGORY',
+      '.results-table thead th:nth-child(6)': 'TIME',
+      '.results-table thead th:nth-child(7)': 'DIFF.',
+      '.results-board-foot span:nth-child(1)': 'XCO',
+      '.results-board-foot span:nth-child(2)': 'XCC',
+      '.results-board-foot span:nth-child(3)': 'CATEGORIES'
     },
-    es: { 
-      '.inner-intro .section-kicker': 'Valdivia Bike Fest / Resultados',
-      '.inner-intro h1': 'Tu marca<br><em>queda aquí.</em>', 
-      '.inner-intro > p:last-child': 'El tablero oficial se activará después de cada largada. Vuelve para buscar tu tiempo y revisar el resultado de tu categoría.',
-      '.results-page-board .results-board-head span:first-child': 'VBF / RESULTADOS',
-      '.results-page-board .results-board-head span:last-child': 'PRÓXIMAMENTE',
-      '.results-page-board .results-empty strong': 'Resultados<br>por publicar',
-      '.results-page-board .results-empty p': 'El tablero se activa después de la carrera.',
-      '.results-page-board .results-board-foot span:nth-child(1)': 'XCO',
-      '.results-page-board .results-board-foot span:nth-child(2)': 'XCC / SHORT TRACK',
-      '.results-page-board .results-board-foot span:nth-child(3)': 'CATEGORÍAS'
+    es: {
+      '.results-hero .section-kicker': 'Valdivia Bike Fest / Resultados 2027',
+      '.results-hero h1': 'Tu marca<br><em>queda aqu\u00ed.</em>',
+      '.results-hero .inner-intro > p:last-child': 'El tablero oficial se activar\u00e1 despu\u00e9s de cada largada. Vuelve para buscar tu tiempo y revisar el resultado de tu categor\u00eda.',
+      '.results-demo-badge': 'DATOS DE PRUEBA',
+      '.results-demo-note': 'Tabla de demostraci\u00f3n con datos ficticios. El tablero oficial se activa despu\u00e9s de cada largada.',
+      '.results-board-head span:first-child': 'VBF / RESULTADOS',
+      '.results-board-head span:last-child': 'EN VIVO \u00b7 DEMO',
+      '[data-i18n="results-chip-all"]': 'Todas',
+      '.results-table thead th:nth-child(1)': 'POS',
+      '.results-table thead th:nth-child(2)': 'DORSAL',
+      '.results-table thead th:nth-child(3)': 'CORREDOR/A',
+      '.results-table thead th:nth-child(4)': 'CLUB',
+      '.results-table thead th:nth-child(5)': 'CATEGOR\u00cdA',
+      '.results-table thead th:nth-child(6)': 'TIEMPO',
+      '.results-table thead th:nth-child(7)': 'DIF.',
+      '.results-board-foot span:nth-child(1)': 'XCO',
+      '.results-board-foot span:nth-child(2)': 'XCC',
+      '.results-board-foot span:nth-child(3)': 'CATEGOR\u00cdAS'
     }
   },
   valdivia: {
@@ -752,18 +805,100 @@ function setupHeaderScroll() {
   onScroll();
 }
 
-function setupValdiviaCarousel() {
-  const carousel = document.querySelector('.valdivia-carousel');
-  if (!carousel) return;
-  const images = carousel.querySelectorAll('.carousel-img');
-  if (images.length < 2) return;
-  let current = 0;
-  const interval = 5000;
-  setInterval(() => {
-    images[current].classList.remove('active');
-    current = (current + 1) % images.length;
-    images[current].classList.add('active');
-  }, interval);
+function setupCrossfade() {
+  const containers = document.querySelectorAll('[data-crossfade]');
+  if (!containers.length) return;
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  containers.forEach(container => {
+    const images = container.querySelectorAll('.carousel-img');
+    if (images.length < 2) return;
+    if (prefersReducedMotion) return;
+    let current = 0;
+    const interval = parseInt(container.getAttribute('data-interval'), 10) || 5000;
+    setInterval(() => {
+      images[current].classList.remove('active');
+      current = (current + 1) % images.length;
+      images[current].classList.add('active');
+    }, interval);
+  });
+}
+
+function renderResultsTable(bodyId, rows) {
+  const tbody = document.getElementById(bodyId);
+  if (!tbody) return;
+  tbody.innerHTML = '';
+  rows.forEach(row => {
+    const tr = document.createElement('tr');
+    tr.dataset.category = row.cat;
+    if (row.pos === 1) tr.dataset.podium = '1';
+    tr.innerHTML = `<td>${row.pos}</td><td>${row.dorsal}</td><td>${row.name}</td><td>${row.club}</td><td>${row.catLabel}</td><td>${row.time}</td><td>${row.dif}</td>`;
+    tbody.appendChild(tr);
+  });
+}
+
+function renumberVisibleRows(tbody) {
+  const rows = tbody.querySelectorAll('tr:not([hidden])');
+  rows.forEach((tr, i) => {
+    const td = tr.querySelector('td');
+    if (td) td.textContent = i + 1;
+    if (i === 0) tr.dataset.podium = '1';
+    else delete tr.dataset.podium;
+  });
+}
+
+function applyCategoryFilter() {
+  const activeChip = document.querySelector('.results-chip.is-active');
+  if (!activeChip) return;
+  const cat = activeChip.dataset.category;
+  document.querySelectorAll('.results-panel').forEach(panel => {
+    const tbody = panel.querySelector('tbody');
+    if (!tbody) return;
+    tbody.querySelectorAll('tr').forEach(tr => {
+      if (cat === 'all' || tr.dataset.category === cat) tr.removeAttribute('hidden');
+      else tr.setAttribute('hidden', '');
+    });
+    renumberVisibleRows(tbody);
+  });
+}
+
+function setupResultsTabs() {
+  const tablist = document.querySelector('.results-tabs');
+  if (!tablist) return;
+  const tabs = Array.from(tablist.querySelectorAll('.results-tab'));
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => { t.classList.remove('is-active'); t.setAttribute('aria-selected', 'false'); });
+      tab.classList.add('is-active');
+      tab.setAttribute('aria-selected', 'true');
+      const panelId = tab.getAttribute('aria-controls');
+      document.querySelectorAll('.results-panel').forEach(p => {
+        if (p.id === panelId) p.removeAttribute('hidden');
+        else p.setAttribute('hidden', '');
+      });
+      applyCategoryFilter();
+    });
+    tab.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        const idx = tabs.indexOf(tab);
+        const next = e.key === 'ArrowRight' ? (idx + 1) % tabs.length : (idx - 1 + tabs.length) % tabs.length;
+        tabs[next].focus();
+      }
+    });
+  });
+}
+
+function setupCategoryChips() {
+  const chipGroup = document.querySelector('.results-chips');
+  if (!chipGroup) return;
+  const chips = Array.from(chipGroup.querySelectorAll('.results-chip'));
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => c.classList.remove('is-active'));
+      chip.classList.add('is-active');
+      applyCategoryFilter();
+    });
+  });
 }
 
 function setupDestinationsNav() {
@@ -836,7 +971,11 @@ setupLanguageToggle();
 setupRouteTabs();
 setupCountdown();
 setupHeaderScroll();
-setupValdiviaCarousel();
+setupCrossfade();
+setupResultsTabs();
+setupCategoryChips();
+renderResultsTable('results-body-xco', demoResultsData.xco);
+renderResultsTable('results-body-xcc', demoResultsData.xcc);
 setupDestinationsNav();
 setupScrollAnimations();
 

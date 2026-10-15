@@ -37,22 +37,45 @@
 
     <main class="event-page">
 
-      <!-- 1. HERO -->
-      <section class="event-hero">
-        <div class="event-hero-bg"><img src="img/carrera.avif" alt="" loading="eager" fetchpriority="high"></div>
-        <div class="event-hero-overlay"></div>
-        <div class="inner-intro">
-          <p class="section-kicker">Valdivia Bike Fest / El evento</p>
-          <h1>La carrera<br>empieza <em>antes.</em></h1>
-          <p>Más que una competencia: un punto de encuentro entre el mountain bike continental y la comunidad ciclista del sur de Chile.</p>
-        </div>
-      </section>
+      <div class="hero-organizers-wrap">
+        <!-- 1. HERO -->
+        <section class="event-hero">
+          <div class="event-hero-bg"><img src="img/chile.avif" alt="Paisaje natural del sur de Chile, bosques y ríos de Valdivia" loading="eager" fetchpriority="high"></div>
+          <div class="event-hero-overlay"></div>
+          <div class="inner-intro">
+            <p class="section-kicker">Valdivia Bike Fest / El evento</p>
+            <h1>La carrera<br>empieza <em>antes.</em></h1>
+            <p>Más que una competencia: un punto de encuentro entre el mountain bike continental y la comunidad ciclista del sur de Chile.</p>
+          </div>
+        </section>
+
+        <!-- 6. ORGANIZADORES -->
+        <section class="event-organizers-section">
+          <div class="event-organizers-grid">
+            <div class="organizer-block">
+              <span class="organizer-role">Organiza</span>
+              <strong class="organizer-name">MVK Sports</strong>
+              <span class="organizer-detail">Club Ciclismo Ríos Cruces, Valdivia</span>
+            </div>
+            <div class="organizer-block">
+              <span class="organizer-role">Fiscaliza</span>
+              <strong class="organizer-name">Fedenacich</strong>
+              <span class="organizer-detail">Federación de Ciclismo de Chile</span>
+            </div>
+            <div class="organizer-block">
+              <span class="organizer-role">Respaldo internacional</span>
+              <strong class="organizer-name">COPACI</strong>
+              <span class="organizer-detail">Confederación Panamericana de Ciclismo</span>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <!-- 2. ¿QUÉ ES VALDIVIA BIKE FEST? -->
       <section class="event-intro-section">
-        <p class="section-kicker">¿Qué es?</p>
-        <h2>Un evento<br><em>internacional</em> de mountain bike.</h2>
-        <div class="event-intro-content">
+        <p class="section-kicker animate-on-scroll">¿Qué es?</p>
+        <h2 class="animate-on-scroll" style="transition-delay:.1s">Un evento<br><em>internacional</em> de mountain bike.</h2>
+        <div class="event-intro-content animate-on-scroll" style="transition-delay:.25s">
           <p class="event-intro-lead">Valdivia Bike Fest es una competencia internacional de mountain bike que se realiza en Valdivia, Región de Los Ríos, Chile. Organizada como fecha del <strong>American Continental Series MTB</strong>, el evento reúne a referentes del cross-country continental y ofrece una experiencia competitiva de alto nivel en uno de los entornos naturales más distintivos del sur de Chile.</p>
           <div class="event-intro-detail-list">
             <div>
@@ -82,9 +105,9 @@
 
       <!-- 3. PROPÓSITO Y VISIÓN -->
       <section class="event-purpose-section">
-        <p class="section-kicker">Propósito</p>
-        <h2>Por qué<br><em>existe</em> este evento.</h2>
-        <div class="event-purpose-grid">
+        <p class="section-kicker animate-on-scroll">Propósito</p>
+        <h2 class="animate-on-scroll" style="transition-delay:.1s">Por qué<br><em>existe</em> este evento.</h2>
+        <div class="event-purpose-grid animate-on-scroll" style="transition-delay:.25s">
           <div class="event-purpose-item">
             <strong>Desarrollar el mountain bike en Chile</strong>
             <p>Generar competencias de nivel internacional que posicionen al país en el calendario continental y ofrezcan a los atletas chilenos la oportunidad de sumar puntos UCI sin salir de su territorio.</p>
@@ -106,10 +129,13 @@
 
       <!-- 4. CARÁCTER INTERNACIONAL -->
       <section class="event-international-section">
-        <p class="section-kicker">Carácter internacional</p>
-        <h2>Del continente<br><em>para el mundo.</em></h2>
-        <div class="event-international-content">
-          <p class="event-international-lead">Valdivia Bike Fest forma parte del calendario <strong>American Continental Series MTB</strong>, lo que significa que cada edición atrae a referentes del cross-country sudamericano y panamericano, incluyendo campeones continentales, medallistas olímpicos y equipos nacionales de todo el continente.</p>
+        <p class="section-kicker animate-on-scroll">Carácter internacional</p>
+        <h2 class="animate-on-scroll" style="transition-delay:.1s">Del continente<br><em>para el mundo.</em></h2>
+        <div class="event-international-content animate-on-scroll" style="transition-delay:.25s">
+          <div class="event-international-text">
+            <p class="event-international-lead">Valdivia Bike Fest forma parte del calendario <strong>American Continental Series MTB</strong>, lo que significa que cada edición atrae a referentes del cross-country sudamericano y panamericano, incluyendo campeones continentales, medallistas olímpicos y equipos nacionales de todo el continente.</p>
+            <a class="arrow-link" href="ruta.html">Explora la ruta y el horario <span aria-hidden="true">↗</span></a>
+          </div>
           <div class="event-international-data">
             <div class="international-item">
               <span class="international-label">Calendario</span>
@@ -133,108 +159,35 @@
 
       <!-- 5. COMUNIDAD Y PARTICIPACIÓN -->
       <section class="event-community-section">
-        <p class="section-kicker">Comunidad</p>
-        <h2>Un evento<br><em>para todos.</em></h2>
-        <div class="event-community-content">
-          <p>Valdivia Bike Fest no es solo para atletas de élite. Es un evento familiar e inclusivo donde la comunidad de riders, familias y seguidores del mountain bike se encuentra en torno a la competencia y la naturaleza.</p>
-          <div class="event-community-features">
-            <div class="community-feature">
-              <strong>Categorías abiertas</strong>
-              <p>Short Track Open y Promocional para quienes quieren vivir la experiencia de competencia sin necesidad de licencia UCI.</p>
-            </div>
-            <div class="community-feature">
-              <strong>Menores y cadetes</strong>
-              <p>Categorías desde pre-juvenil hasta juvenil, para que las nuevas generaciones crezcan en el deporte.</p>
-            </div>
-            <div class="community-feature">
-              <strong>Master A, B, C y D</strong>
-              <p>Desde los 30 hasta los 60 y más. La competencia no tiene límite de edad.</p>
-            </div>
+        <p class="section-kicker animate-on-scroll">Comunidad</p>
+        <h2 class="animate-on-scroll" style="transition-delay:.1s">Un evento<br><em>para todos.</em></h2>
+        <p class="animate-on-scroll" style="transition-delay:.25s">Valdivia Bike Fest no es solo para atletas de élite. Es un evento familiar e inclusivo donde la comunidad de riders, familias y seguidores del mountain bike se encuentra en torno a la competencia y la naturaleza.</p>
+        <div class="event-community-features animate-on-scroll" style="transition-delay:.4s">
+          <div class="community-feature">
+            <strong>Categorías abiertas</strong>
+            <p>Short Track Open y Promocional para quienes quieren vivir la experiencia de competencia sin necesidad de licencia UCI.</p>
+          </div>
+          <div class="community-feature">
+            <strong>Menores y cadetes</strong>
+            <p>Categorías desde pre-juvenil hasta juvenil, para que las nuevas generaciones crezcan en el deporte.</p>
+          </div>
+          <div class="community-feature">
+            <strong>Master A, B, C y D</strong>
+            <p>Desde los 30 hasta los 60 y más. La competencia no tiene límite de edad.</p>
           </div>
         </div>
       </section>
 
-      <!-- 6. VALDIVIA Y EL ENTORNO -->
-      <section class="event-valdivia-section">
-        <div class="event-valdivia-grid">
-          <div class="event-valdivia-copy">
-            <p class="section-kicker">Territorio</p>
-            <h2>Valdivia<br><em>es el evento.</em></h2>
-            <p>Bosque valdiviano, ríos caudalosos, lluvia y verde profundo. Competir en el sur de Chile es una experiencia que va más allá del circuito: es el territorio el que le da carácter a la carrera.</p>
-            <p>La identidad territorial de Valdivia —su cultura germano-chilota, su gastronomía, sus humedales y su cercanía con volcanes y parques nacionales— convierte cada edición en algo irrepetible.</p>
-            <a class="arrow-link" href="valdivia.html">Descubre Valdivia <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="event-valdivia-image">
-            <img src="img/chile.avif" alt="Bosque valdiviano, ríos y naturaleza del sur de Chile" loading="lazy">
-          </div>
+      <!-- 7. CTA FINAL -->
+      <section class="final-cta" aria-labelledby="contact-title">
+        <div class="cta-coordinate">VALDIVIA / CHILE</div>
+        <div>
+          <p class="section-kicker">Tu próxima carrera</p>
+          <h2 id="contact-title">Nos vemos<br>en la <em>ruta</em></h2>
         </div>
-      </section>
-
-      <!-- 7. ORGANIZADORES -->
-      <section class="event-organizers-section">
-        <p class="section-kicker">Organiza</p>
-        <div class="event-organizers-grid">
-          <div class="organizer-block">
-            <span class="organizer-role">Organiza</span>
-            <strong class="organizer-name">MVK Sports</strong>
-            <span class="organizer-detail">Club Ciclismo Ríos Cruces, Valdivia</span>
-          </div>
-          <div class="organizer-block">
-            <span class="organizer-role">Fiscaliza</span>
-            <strong class="organizer-name">Fedenacich</strong>
-            <span class="organizer-detail">Federación de Ciclismo de Chile</span>
-          </div>
-          <div class="organizer-block">
-            <span class="organizer-role">Respaldo internacional</span>
-            <strong class="organizer-name">COPACI</strong>
-            <span class="organizer-detail">Confederación Panamericana de Ciclismo</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- 8. HISTORIA -->
-      <section class="event-history-section">
-        <p class="section-kicker">VBF / Historia</p>
-        <h2>Dos ediciones.<br><em>Una trayectoria.</em></h2>
-        <div class="event-history-grid">
-          <div class="history-card">
-            <span class="history-year">2026</span>
-            <span class="history-edition">Segunda edición</span>
-            <div class="history-highlights">
-              <div class="history-champion">
-                <span class="champion-label">Campeón absoluto</span>
-                <strong class="champion-name">Martín Vidaurre <small>(CHI)</small></strong>
-              </div>
-              <div class="history-champion">
-                <span class="champion-label">Campeona femenina</span>
-                <strong class="champion-name">Haley Batten <small>(USA)</small></strong>
-              </div>
-            </div>
-            <p class="history-note">Fecha inaugural del American Continental Series MTB. Primera fecha selectiva para la Selección Nacional de Chile.</p>
-          </div>
-          <div class="history-card history-card-placeholder">
-            <span class="history-year">2025</span>
-            <span class="history-edition">Primera edición</span>
-            <div class="history-highlights">
-              <div class="history-champion">
-                <span class="champion-label">Datos por confirmar</span>
-              </div>
-            </div>
-            <p class="history-note">Información de la edición inaugural próximamente.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- 9. CTA FINAL -->
-      <section class="event-cta-section">
-        <div class="event-cta-content">
-          <p class="section-kicker">Siguiente paso</p>
-          <h2>Conoce la<br><em>edición 2027.</em></h2>
-          <p>Circuitos, programa, categorías y todo lo que necesitas para llegar a Valdivia con la cabeza puesta en la ruta.</p>
-          <div class="event-cta-actions">
-            <a class="button button-lime button-large" href="ruta.html">Ver edición 2027 <span aria-hidden="true">↗</span></a>
-            <a class="button button-ghost button-large" href="https://www.eventrid.cl/eventos/mvk/valdivia-bikefest-2026" target="_blank" rel="noopener" data-registration>Inscríbete <span aria-hidden="true">↗</span></a>
-          </div>
+        <div class="cta-actions">
+          <a class="button button-lime" href="https://www.eventrid.cl/eventos/mvk/valdivia-bikefest-2026" target="_blank" rel="noopener" data-registration>Inscríbete <span aria-hidden="true">↗</span></a>
+          <a class="text-link text-link-light" href="contacto.html">Contáctanos <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 

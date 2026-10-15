@@ -196,7 +196,7 @@ El tablero está vacío y no tiene aún una fuente oficial conectada. Confirmar:
 
 - [x] Definir estructura de resultados 2027. **Completado: XCO, XCC/Short Track, Categorías, Clasificaciones, Ranking.**
 - [x] Definir propuesta de resultados históricos. **Completado: resultados por edición (2026, 2025, etc.).**
-- [ ] Implementar el diseño de la estructura de resultados con estados vacíos honestos.
+- [x] Implementar el diseño de la estructura de resultados con estados vacíos honestos. **Completado: hero con crossfade mujer/hombre (8 s, 1.5 s fade), tablero demo con tabs XCO/XCC, chips de categoría por género/edad, y tabla de resultados con datos ficticios marcados como demo (clase `.is-demo`, badge `DATOS DE PRUEBA`, nota de disclaimer). Listo para reemplazar por fuente oficial de cronometraje.**
 - [ ] Conectar con la fuente oficial de cronometraje.
 
 ### Valdivia
