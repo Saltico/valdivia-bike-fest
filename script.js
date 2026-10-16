@@ -54,11 +54,11 @@ const demoResultsData = {
 const pageCopy = {
   index: {
     en: {
-      '#hero-title': 'The route<br><em>is waiting.</em>',
+      '#hero-title': 'The route<br><em>is waiting</em>',
       '.hero-intro': 'A mountain bike competition between forest, water, and city. Save your place at the start line and know the terrain before you arrive.',
       '.signal-line': 'Valdivia / Chile <span class="signal-rule"></span> VBF / NEXT EDITION',
       '.status-message': '10–14 March 2027 <span aria-hidden="true">↗</span>',
-      '#event-title': 'Five days.<br><em>Two formats.</em>',
+      '#event-title': 'Five days<br><em>Two formats</em>',
       '.event-intro .lead-copy': 'Valdivia Bike Fest brings together those who come for the challenge and stay for the landscape. Everything you need to prepare for your race, in one place.',
       '.event-intro .arrow-link': 'Discover the event <span aria-hidden="true">↗</span>',
       '.event-grid-label': 'WHAT YOU\'LL FIND',
@@ -69,7 +69,7 @@ const pageCopy = {
       '.info-list li:nth-child(3) strong': 'The energy<br>of the pack',
       '.info-list li:nth-child(3) em': 'A community that starts before pedaling.',
       
-      '#route-title': 'Read the terrain<br>before you <em>ride it.</em>',
+      '#route-title': 'Read the terrain<br>before you <em>ride it</em>',
       '.route-tab:nth-child(1) strong': 'XCO',
       '.route-tab:nth-child(1) small': 'Cross-Country Olympic · ~3.6 km per lap',
       '.route-tab:nth-child(2) strong': 'XCC',
@@ -78,7 +78,7 @@ const pageCopy = {
       '.detail-footer span': 'Schedule and lap counts per category are defined at the technical meeting.',
       '.detail-footer a': 'View full route <span aria-hidden="true">↗</span>',
       
-      '#schedule-title': 'Everything<br>in its <em>time.</em>',
+      '#schedule-title': 'Everything<br>in its <em>time</em>',
       '.schedule-row:nth-child(1) strong': 'Kit pickup',
       '.schedule-row:nth-child(1) span': 'Wednesday, March 10, 9:00 AM',
       '.schedule-row:nth-child(1) em': 'Activities begin',
@@ -92,16 +92,16 @@ const pageCopy = {
       '.schedule-row:nth-child(4) span': 'After each finish',
       '.schedule-row:nth-child(4) em': 'Online query',
       
-      '#results-title': 'Your mark<br>stays <em>here.</em>',
+      '#results-title': 'Your mark<br>stays <em>here</em>',
       '.results-copy > p:not(.section-kicker)': 'When the race ends, find your time, your category, and where you placed in the pack. The official board awaits you on a single screen.',
       '.results-copy .button-dark': 'View full results <span aria-hidden="true">↗</span>',
       
-      '#valdivia-title': 'Come for<br>the race.<br><em>Stay for<br>the city.</em>',
+      '#valdivia-title': 'Come to compete<br><em>Discover the city</em>',
       '.valdivia-copy > p:not(.section-kicker)': 'A city of rivers, rain, and deep green. Turn your race into a getaway and discover the place that gives this experience its character.',
       '.valdivia-copy .arrow-link': 'Discover Valdivia <span aria-hidden="true">↗</span>',
       '.map-phrase': 'WHERE WATER<br>MEETS THE FOREST',
       
-      '#contact-title': 'See you<br>on the <em>route.</em>',
+      '#contact-title': 'See you<br>on the <em>route</em>',
       '.cta-coordinate': 'VALDIVIA / CHILE',
       '.final-cta .section-kicker': 'Your next race',
       '.cta-actions .text-link': 'Contact us <span aria-hidden="true">↗</span>',
@@ -115,12 +115,12 @@ const pageCopy = {
       '.footer-meta span:last-child': 'ES / EN'
     },
     es: {
-      '#hero-title': 'La ruta<br><em>está esperando.</em>',
+      '#hero-title': 'La ruta<br><em>está esperando</em>',
       '.hero-intro': 'Una competencia de mountain bike entre bosque, agua y ciudad. Guarda tu lugar en la línea de partida y conoce el terreno antes de llegar.',
       '.signal-line': 'Valdivia / Chile <span class="signal-rule"></span> VBF / PRÓXIMA EDICIÓN',
       '.status-message': '10–14 marzo 2027 <span aria-hidden="true">↗</span>',
       
-      '#event-title': 'Cinco días.<br><em>Dos formatos.</em>',
+      '#event-title': 'Cinco días<br><em>Dos formatos</em>',
       '.event-intro .lead-copy': 'Valdivia Bike Fest reúne a quienes llegan por el desafío y se quedan por el paisaje. Todo lo que necesitas para preparar tu carrera, en un solo lugar.',
       '.event-intro .arrow-link': 'Conoce el evento <span aria-hidden="true">↗</span>',
       '.event-grid-label': 'LO QUE ENCONTRARÁS',
@@ -131,7 +131,7 @@ const pageCopy = {
       '.info-list li:nth-child(3) strong': 'La energía<br>del pelotón',
       '.info-list li:nth-child(3) em': 'Una comunidad que empieza antes de pedalear.',
       
-      '#route-title': 'Lee el terreno<br>antes de <em>vivirlo.</em>',
+      '#route-title': 'Lee el terreno<br>antes de <em>vivirlo</em>',
       '.route-tab:nth-child(1) strong': 'XCO',
       '.route-tab:nth-child(1) small': 'Cross-Country Olímpico · ~3,6 km por vuelta',
       '.route-tab:nth-child(2) strong': 'XCC',
@@ -140,7 +140,7 @@ const pageCopy = {
       '.detail-footer span': 'Horarios y vueltas por categoría se definen en el congreso técnico.',
       '.detail-footer a': 'Ver ruta completa <span aria-hidden="true">↗</span>',
       
-      '#schedule-title': 'Todo en<br><em>su momento.</em>',
+      '#schedule-title': 'Todo en<br><em>su momento</em>',
       '.schedule-row:nth-child(1) strong': 'Retiro de kit',
       '.schedule-row:nth-child(1) span': 'Miércoles 10 de marzo, 9:00 hrs',
       '.schedule-row:nth-child(1) em': 'Inicio de actividades',
@@ -154,16 +154,16 @@ const pageCopy = {
       '.schedule-row:nth-child(4) span': 'Después de cada llegada',
       '.schedule-row:nth-child(4) em': 'Consulta online',
       
-      '#results-title': 'La marca<br>queda <em>aquí.</em>',
+      '#results-title': 'La marca<br>queda <em>aquí</em>',
       '.results-copy > p:not(.section-kicker)': 'Cuando la carrera termine, busca tu tiempo, tu categoría y el lugar que ocupaste en el pelotón. El tablero oficial te espera en una sola pantalla.',
       '.results-copy .button-dark': 'Ver resultados completos <span aria-hidden="true">↗</span>',
       
-      '#valdivia-title': 'Ven por<br>la carrera.<br><em>Quédate por<br>la ciudad.</em>',
+      '#valdivia-title': 'Ven a competir<br><em>Conoce la ciudad</em>',
       '.valdivia-copy > p:not(.section-kicker)': 'Una ciudad de ríos, lluvia y verde profundo. Haz de tu carrera una escapada y conoce el lugar que le da su carácter a esta experiencia.',
       '.valdivia-copy .arrow-link': 'Descubre Valdivia <span aria-hidden="true">↗</span>',
       '.map-phrase': 'DONDE EL AGUA<br>ENCUENTRA EL BOSQUE',
       
-      '#contact-title': 'Nos vemos<br>en la <em>ruta.</em>',
+      '#contact-title': 'Nos vemos<br>en la <em>ruta</em>',
       '.cta-coordinate': 'VALDIVIA / CHILE',
       '.final-cta .section-kicker': 'Tu próxima carrera',
       '.cta-actions .text-link': 'Contáctanos <span aria-hidden="true">↗</span>',
@@ -181,11 +181,11 @@ const pageCopy = {
     en: { 
       // 1. Hero
       '.event-hero .section-kicker': 'Valdivia Bike Fest / The event',
-      '.event-hero h1': 'The race<br>starts <em>earlier.</em>', 
+      '.event-hero h1': 'The race<br>starts <em>earlier</em>', 
       '.event-hero .inner-intro > p:last-child': 'More than a competition: a meeting point between continental mountain biking and the cycling community of southern Chile.',
       // 2. What is it?
       '.event-intro-section .section-kicker': 'What is it?',
-      '.event-intro-section h2': 'An <em>international</em><br>mountain bike event.',
+      '.event-intro-section h2': 'An <em>international</em><br>mountain bike event',
       '.event-intro-lead': 'Valdivia Bike Fest is an international mountain bike competition held in Valdivia, Los Ríos Region, Chile. Organized as a round of the <strong>American Continental Series MTB</strong>, the event brings together top cross-country riders from the continent and offers a world-class competitive experience in one of the most distinctive natural settings in southern Chile.',
       '.event-intro-detail-list > div:nth-child(1) strong': 'UCI Calendar',
       '.event-intro-detail-list > div:nth-child(1) p': 'A round of the American Continental Series MTB with points toward the world ranking.',
@@ -195,7 +195,7 @@ const pageCopy = {
       '.event-intro-detail-list > div:nth-child(3) p': 'First selection round for the Chilean National Team.',
       // 3. Purpose
       '.event-purpose-section .section-kicker': 'Purpose',
-      '.event-purpose-section h2': 'Why this<br>event <em>exists.</em>',
+      '.event-purpose-section h2': 'Why this<br>event <em>exists</em>',
       '.event-purpose-item:nth-child(1) strong': 'Develop mountain biking in Chile',
       '.event-purpose-item:nth-child(1) p': 'Create international-level competitions that place the country on the continental calendar and give Chilean athletes the chance to earn UCI points without leaving home.',
       '.event-purpose-item:nth-child(2) strong': 'Opportunities for riders of all levels',
@@ -206,7 +206,7 @@ const pageCopy = {
       '.event-purpose-item:nth-child(4) p': 'Let international riders discover southern Chile: its forests, rivers, and the culture of a city best explored without rushing.',
       // 4. International
       '.event-international-section .section-kicker': 'International character',
-      '.event-international-section h2': 'From the continent<br><em>to the world.</em>',
+      '.event-international-section h2': 'From the continent<br><em>to the world</em>',
       '.event-international-lead': 'Valdivia Bike Fest is part of the <strong>American Continental Series MTB</strong> calendar, which means each edition attracts top cross-country riders from South America and across the Pan-American region, including continental champions, Olympic medalists, and national teams from across the continent.',
       '.international-item:nth-child(1) .international-label': 'Calendar',
       '.international-item:nth-child(1) .international-value': 'American Continental Series MTB',
@@ -218,7 +218,7 @@ const pageCopy = {
       '.international-item:nth-child(4) .international-value': 'Fedenacich + COPACI',
       // 5. Community
       '.event-community-section .section-kicker': 'Community',
-      '.event-community-section h2': 'An event<br><em>for everyone.</em>',
+      '.event-community-section h2': 'An event<br><em>for everyone</em>',
       '.event-community-content > p': 'Valdivia Bike Fest is not just for elite athletes. It is a family-friendly, inclusive event where the community of riders, families, and mountain bike fans comes together around competition and nature.',
       '.community-feature:nth-child(1) strong': 'Open categories',
       '.community-feature:nth-child(1) p': 'Short Track Open and Promotional for those who want the race experience without a UCI license.',
@@ -228,7 +228,7 @@ const pageCopy = {
       '.community-feature:nth-child(3) p': 'From 30 to 60 and beyond. Competition has no age limit.',
       // 6. Valdivia
       '.event-valdivia-copy .section-kicker': 'Territory',
-      '.event-valdivia-copy h2': 'Valdivia<br><em>is the event.</em>',
+      '.event-valdivia-copy h2': 'Valdivia<br><em>is the event</em>',
       '.event-valdivia-copy > p:nth-of-type(1)': 'Valdivian forest, mighty rivers, rain, and deep green. Racing in southern Chile is an experience that goes beyond the circuit: it is the land that gives the race its character.',
       '.event-valdivia-copy > p:nth-of-type(2)': 'The territorial identity of Valdivia — its German-Chilote culture, gastronomy, wetlands, and proximity to volcanoes and national parks — makes each edition truly unique.',
       '.event-valdivia-copy .arrow-link': 'Discover Valdivia <span aria-hidden="true">↗</span>',
@@ -241,7 +241,7 @@ const pageCopy = {
       '.organizer-block:nth-child(3) .organizer-detail': 'Pan American Cycling Confederation',
       // 8. History
       '.event-history-section .section-kicker': 'VBF / History',
-      '.event-history-section h2': 'Two editions.<br><em>One legacy.</em>',
+      '.event-history-section h2': 'Two editions<br><em>One legacy</em>',
       '.history-card:nth-child(1) .history-edition': 'Second edition',
       '.history-card:nth-child(1) .history-champion:nth-child(1) .champion-label': 'Absolute champion',
       '.history-card:nth-child(1) .history-champion:nth-child(2) .champion-label': 'Women\'s champion',
@@ -251,7 +251,7 @@ const pageCopy = {
       '.history-card:nth-child(2) .history-note': 'Information about the inaugural edition coming soon.',
       // 9. CTA
       '.event-cta-content .section-kicker': 'Next step',
-      '.event-cta-content h2': 'See the<br><em>2027 edition.</em>',
+      '.event-cta-content h2': 'See the<br><em>2027 edition</em>',
       '.event-cta-content > p': 'Circuits, schedule, categories, and everything you need to arrive in Valdivia with your mind set on the route.',
       '.event-cta-actions .button-lime': 'See 2027 edition <span aria-hidden="true">↗</span>',
       '.event-cta-actions .button-ghost': 'Register <span aria-hidden="true">↗</span>'
@@ -259,11 +259,11 @@ const pageCopy = {
     es: { 
       // 1. Hero
       '.event-hero .section-kicker': 'Valdivia Bike Fest / El evento',
-      '.event-hero h1': 'La carrera<br>empieza <em>antes.</em>', 
+      '.event-hero h1': 'La carrera<br>empieza <em>antes</em>', 
       '.event-hero .inner-intro > p:last-child': 'Más que una competencia: un punto de encuentro entre el mountain bike continental y la comunidad ciclista del sur de Chile.',
       // 2. ¿Qué es?
       '.event-intro-section .section-kicker': '¿Qué es?',
-      '.event-intro-section h2': 'Un evento<br><em>internacional</em> de mountain bike.',
+      '.event-intro-section h2': 'Un evento<br><em>internacional</em> de mountain bike',
       '.event-intro-lead': 'Valdivia Bike Fest es una competencia internacional de mountain bike que se realiza en Valdivia, Región de Los Ríos, Chile. Organizada como fecha del <strong>American Continental Series MTB</strong>, el evento reúne a referentes del cross-country continental y ofrece una experiencia competitiva de alto nivel en uno de los entornos naturales más distintivos del sur de Chile.',
       '.event-intro-detail-list > div:nth-child(1) strong': 'Calendario UCI',
       '.event-intro-detail-list > div:nth-child(1) p': 'Fecha del American Continental Series MTB con puntaje para el ranking mundial.',
@@ -273,7 +273,7 @@ const pageCopy = {
       '.event-intro-detail-list > div:nth-child(3) p': 'Primera fecha selectiva para la Selección Nacional de Chile.',
       // 3. Propósito
       '.event-purpose-section .section-kicker': 'Propósito',
-      '.event-purpose-section h2': 'Por qué<br><em>existe</em> este evento.',
+      '.event-purpose-section h2': 'Por qué<br><em>existe</em> este evento',
       '.event-purpose-item:nth-child(1) strong': 'Desarrollar el mountain bike en Chile',
       '.event-purpose-item:nth-child(1) p': 'Generar competencias de nivel internacional que posicionen al país en el calendario continental y ofrezcan a los atletas chilenos la oportunidad de sumar puntos UCI sin salir de su territorio.',
       '.event-purpose-item:nth-child(2) strong': 'Oportunidades para atletas de distintos niveles',
@@ -284,7 +284,7 @@ const pageCopy = {
       '.event-purpose-item:nth-child(4) p': 'Que los riders internacionales conozcan el sur de Chile: sus bosques, sus ríos y la cultura de una ciudad que se vive mejor sin apuro.',
       // 4. Carácter internacional
       '.event-international-section .section-kicker': 'Carácter internacional',
-      '.event-international-section h2': 'Del continente<br><em>para el mundo.</em>',
+      '.event-international-section h2': 'Del continente<br><em>para el mundo</em>',
       '.event-international-lead': 'Valdivia Bike Fest forma parte del calendario <strong>American Continental Series MTB</strong>, lo que significa que cada edición atrae a referentes del cross-country sudamericano y panamericano, incluyendo campeones continentales, medallistas olímpicos y equipos nacionales de todo el continente.',
       '.international-item:nth-child(1) .international-label': 'Calendario',
       '.international-item:nth-child(1) .international-value': 'American Continental Series MTB',
@@ -296,7 +296,7 @@ const pageCopy = {
       '.international-item:nth-child(4) .international-value': 'Fedenacich + COPACI',
       // 5. Comunidad
       '.event-community-section .section-kicker': 'Comunidad',
-      '.event-community-section h2': 'Un evento<br><em>para todos.</em>',
+      '.event-community-section h2': 'Un evento<br><em>para todos</em>',
       '.event-community-content > p': 'Valdivia Bike Fest no es solo para atletas de élite. Es un evento familiar e inclusivo donde la comunidad de riders, familias y seguidores del mountain bike se encuentra en torno a la competencia y la naturaleza.',
       '.community-feature:nth-child(1) strong': 'Categorías abiertas',
       '.community-feature:nth-child(1) p': 'Short Track Open y Promocional para quienes quieren vivir la experiencia de competencia sin necesidad de licencia UCI.',
@@ -306,7 +306,7 @@ const pageCopy = {
       '.community-feature:nth-child(3) p': 'Desde los 30 hasta los 60 y más. La competencia no tiene límite de edad.',
       // 6. Valdivia
       '.event-valdivia-copy .section-kicker': 'Territorio',
-      '.event-valdivia-copy h2': 'Valdivia<br><em>es el evento.</em>',
+      '.event-valdivia-copy h2': 'Valdivia<br><em>es el evento</em>',
       '.event-valdivia-copy > p:nth-of-type(1)': 'Bosque valdiviano, ríos caudalosos, lluvia y verde profundo. Competir en el sur de Chile es una experiencia que va más allá del circuito: es el territorio el que le da carácter a la carrera.',
       '.event-valdivia-copy > p:nth-of-type(2)': 'La identidad territorial de Valdivia —su cultura germano-chilota, su gastronomía, sus humedales y su cercanía con volcanes y parques nacionales— convierte cada edición en algo irrepetible.',
       '.event-valdivia-copy .arrow-link': 'Descubre Valdivia <span aria-hidden="true">↗</span>',
@@ -319,7 +319,7 @@ const pageCopy = {
       '.organizer-block:nth-child(3) .organizer-detail': 'Confederación Panamericana de Ciclismo',
       // 8. Historia
       '.event-history-section .section-kicker': 'VBF / Historia',
-      '.event-history-section h2': 'Dos ediciones.<br><em>Una trayectoria.</em>',
+      '.event-history-section h2': 'Dos ediciones<br><em>Una trayectoria</em>',
       '.history-card:nth-child(1) .history-edition': 'Segunda edición',
       '.history-card:nth-child(1) .history-champion:nth-child(1) .champion-label': 'Campeón absoluto',
       '.history-card:nth-child(1) .history-champion:nth-child(2) .champion-label': 'Campeona femenina',
@@ -329,7 +329,7 @@ const pageCopy = {
       '.history-card:nth-child(2) .history-note': 'Información de la edición inaugural próximamente.',
       // 9. CTA
       '.event-cta-content .section-kicker': 'Siguiente paso',
-      '.event-cta-content h2': 'Conoce la<br><em>edición 2027.</em>',
+      '.event-cta-content h2': 'Conoce la<br><em>edición 2027</em>',
       '.event-cta-content > p': 'Circuitos, programa, categorías y todo lo que necesitas para llegar a Valdivia con la cabeza puesta en la ruta.',
       '.event-cta-actions .button-lime': 'Ver edición 2027 <span aria-hidden="true">↗</span>',
       '.event-cta-actions .button-ghost': 'Inscríbete <span aria-hidden="true">↗</span>'
@@ -339,7 +339,7 @@ const pageCopy = {
     en: { 
       // 1. Hero
       '.event-hero .section-kicker': 'Valdivia Bike Fest / 2027 Edition',
-      '.event-hero h1': 'Two circuits.<br><em>One venue.</em>', 
+      '.event-hero h1': 'Two circuits<br><em>One venue</em>', 
       '.event-hero .inner-intro > p:last-child': 'Everything you need to know about the 2027 edition: dates, circuits, categories, schedule, and registration.',
       // 2. Data board
       '.contact-race-item:nth-child(1) .contact-race-label': 'Date',
@@ -354,7 +354,7 @@ const pageCopy = {
       '.contact-race-item:nth-child(5) .contact-race-value': 'World ranking',
       // 3. Formats / Circuits
       '.event-formats-section .section-kicker': 'Race formats',
-      '.event-formats-section h2': 'Two circuits.<br><em>One venue.</em>',
+      '.event-formats-section h2': 'Two circuits<br><em>One venue</em>',
       '.event-formats-grid .circuit-card:nth-child(1) .circuit-label': 'Circuit 01',
       '.event-formats-grid .circuit-card:nth-child(1) .circuit-full-name': 'Cross-Country Olympic',
       '.event-formats-grid .circuit-card:nth-child(1) .metric:nth-child(1) .metric-label': 'Distance per lap',
@@ -374,7 +374,7 @@ const pageCopy = {
       '.event-formats-note': 'Schedules, laps, and categories are set at the technical meeting.',
       // 4. Schedule
       '.event-schedule-section .section-kicker': 'Schedule',
-      '.event-schedule-section h2': 'Five days<br>lived in <em>full.</em>',
+      '.event-schedule-section h2': 'Five days<br>lived in <em>full</em>',
       '.event-schedule-row:nth-child(1) strong': 'Wednesday, March 10',
       '.event-schedule-row:nth-child(1) span': 'Kit pickup + accreditation — 9:00 AM',
       '.event-schedule-row:nth-child(1) .schedule-status': 'Confirmed',
@@ -392,7 +392,7 @@ const pageCopy = {
       '.event-schedule-row:nth-child(5) .schedule-status': 'Pending',
       // 6. Categories
       '.event-categories-section .section-kicker': 'Categories',
-      '.event-categories-section h2': 'All the<br><em>categories.</em>',
+      '.event-categories-section h2': 'All the<br><em>categories</em>',
       '.category-group:nth-child(1) h3': 'UCI International',
       '.category-group:nth-child(2) h3': 'Master',
       '.category-group:nth-child(3) h3': 'Open',
@@ -407,7 +407,7 @@ const pageCopy = {
     es: { 
       // 1. Hero
       '.event-hero .section-kicker': 'Valdivia Bike Fest / Edición 2027',
-      '.event-hero h1': 'Dos circuitos.<br><em>Una sede.</em>', 
+      '.event-hero h1': 'Dos circuitos<br><em>Una sede</em>', 
       '.event-hero .inner-intro > p:last-child': 'Todo lo que necesitas saber sobre la edición 2027: fechas, circuitos, categorías, programa e inscripción.',
       // 2. Datos clave
       '.contact-race-item:nth-child(1) .contact-race-label': 'Fecha',
@@ -422,7 +422,7 @@ const pageCopy = {
       '.contact-race-item:nth-child(5) .contact-race-value': 'Ranking mundial',
       // 3. Formatos / Circuitos
       '.event-formats-section .section-kicker': 'Formatos de competencia',
-      '.event-formats-section h2': 'Dos circuitos.<br><em>Una sede.</em>',
+      '.event-formats-section h2': 'Dos circuitos<br><em>Una sede</em>',
       '.event-formats-grid .circuit-card:nth-child(1) .circuit-label': 'Circuito 01',
       '.event-formats-grid .circuit-card:nth-child(1) .circuit-full-name': 'Cross-Country Olímpico',
       '.event-formats-grid .circuit-card:nth-child(1) .metric:nth-child(1) .metric-label': 'Distancia por vuelta',
@@ -441,7 +441,7 @@ const pageCopy = {
       '.event-formats-note': 'Horarios, vueltas y categorías se definen en el congreso técnico.',
       // 4. Programa
       '.event-schedule-section .section-kicker': 'Programa',
-      '.event-schedule-section h2': 'Cinco días<br>que se viven <em>completos.</em>',
+      '.event-schedule-section h2': 'Cinco días<br>que se viven <em>completos</em>',
       '.event-schedule-row:nth-child(1) strong': 'Miércoles 10 de marzo',
       '.event-schedule-row:nth-child(1) span': 'Retiro de kits + acreditación — 09:00 hrs',
       '.event-schedule-row:nth-child(1) .schedule-status': 'Confirmado',
@@ -459,7 +459,7 @@ const pageCopy = {
       '.event-schedule-row:nth-child(5) .schedule-status': 'Pendiente',
       // 6. Categorías
       '.event-categories-section .section-kicker': 'Categorías',
-      '.event-categories-section h2': 'Todas las<br><em>categorías.</em>',
+      '.event-categories-section h2': 'Todas las<br><em>categorías</em>',
       '.category-group:nth-child(1) h3': 'UCI Internacional',
       '.category-group:nth-child(2) h3': 'Master',
       '.category-group:nth-child(3) h3': 'Abiertas',
@@ -475,7 +475,7 @@ const pageCopy = {
   resultados: {
     en: {
       '.results-hero .section-kicker': 'Valdivia Bike Fest / Results 2027',
-      '.results-hero h1': 'Your mark<br><em>goes here.</em>',
+      '.results-hero h1': 'Your mark<br><em>goes here</em>',
       '.results-hero .inner-intro > p:last-child': 'The official board goes live after each start. Come back to find your time and check your category result.',
       '.results-demo-badge': 'DEMO DATA',
       '.results-demo-note': 'Demo table with fictitious data. The official board activates after each start.',
@@ -495,7 +495,7 @@ const pageCopy = {
     },
     es: {
       '.results-hero .section-kicker': 'Valdivia Bike Fest / Resultados 2027',
-      '.results-hero h1': 'Tu marca<br><em>queda aqu\u00ed.</em>',
+      '.results-hero h1': 'Tu marca<br><em>queda aqu\u00ed</em>',
       '.results-hero .inner-intro > p:last-child': 'El tablero oficial se activar\u00e1 despu\u00e9s de cada largada. Vuelve para buscar tu tiempo y revisar el resultado de tu categor\u00eda.',
       '.results-demo-badge': 'DATOS DE PRUEBA',
       '.results-demo-note': 'Tabla de demostraci\u00f3n con datos ficticios. El tablero oficial se activa despu\u00e9s de cada largada.',
@@ -520,7 +520,7 @@ const pageCopy = {
       '.valdivia-hero-content h1': 'Race in the<br><em>city of water</em>', 
       '.valdivia-intro-text': 'Valdivia is a city of rivers, rain, and deep green. Come for the competition, stay for the forests, the gastronomy, and a culture best explored without rushing. Here water meets forest, and every corner has a story to tell.', 
       '.valdivia-recommendations-header .section-kicker': 'Recommendations', 
-      '.valdivia-recommendations-header h2': 'Discover<br><em>Valdivia.</em>',
+      '.valdivia-recommendations-header h2': 'Discover<br><em>Valdivia</em>',
       // Destinations nav tooltips
       '.destinations-nav-item:nth-child(1)': 'Forests',
       '.destinations-nav-item:nth-child(2)': 'Volcano',
@@ -549,7 +549,7 @@ const pageCopy = {
       '.valdivia-hero-content h1': 'Corre en la<br><em>ciudad del agua</em>', 
       '.valdivia-intro-text': 'Valdivia es una ciudad de ríos, lluvia y verde profundo. Ven por la competencia, quédate por los bosques, la gastronomía y una cultura que se recorre mejor sin apuro. Aquí el agua encuentra el bosque, y cada esquina tiene una historia que contar.', 
       '.valdivia-recommendations-header .section-kicker': 'Recomendaciones', 
-      '.valdivia-recommendations-header h2': 'Descubre<br><em>Valdivia.</em>',
+      '.valdivia-recommendations-header h2': 'Descubre<br><em>Valdivia</em>',
       // Destinations nav tooltips
       '.destinations-nav-item:nth-child(1)': 'Bosques',
       '.destinations-nav-item:nth-child(2)': 'Volcán',
@@ -577,7 +577,7 @@ const pageCopy = {
   contacto: {
     en: {
       '.contact-hero .inner-intro .section-kicker': 'Valdivia Bike Fest / Contact',
-      '.contact-hero .inner-intro h1': "Let's talk<br>about the <em>route.</em>",
+      '.contact-hero .inner-intro h1': "Let's talk<br>about the <em>route</em>",
       '.contact-hero .inner-intro > p:last-child': 'Have a question about the event, registration, or missing information? Write to us from Valdivia.',
       '.contact-form-title': 'Send us <em>a message</em>',
       'label[for="contact-name"]': 'Name',
@@ -600,7 +600,7 @@ const pageCopy = {
     },
     es: {
       '.contact-hero .inner-intro .section-kicker': 'Valdivia Bike Fest / Contacto',
-      '.contact-hero .inner-intro h1': 'Hablemos<br>de la <em>ruta.</em>',
+      '.contact-hero .inner-intro h1': 'Hablemos<br>de la <em>ruta</em>',
       '.contact-hero .inner-intro > p:last-child': '¿Tienes una pregunta sobre el evento, la inscripción o la información que falta? Escríbenos y te responderemos desde Valdivia.',
       '.contact-form-title': 'Escríbenos <em>un mensaje</em>',
       'label[for="contact-name"]': 'Nombre',
