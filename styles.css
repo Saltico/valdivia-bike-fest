@@ -394,6 +394,10 @@ h1 { margin: 1.8rem 0 1.5rem; font-size: clamp(5rem, 10vw, 9rem); line-height: .
 .event-grid.animate-on-scroll { transition-delay: .5s; }
 .route-header.animate-on-scroll { transition-delay: .1s; }
 .interactive-route.animate-on-scroll { transition-delay: .3s; }
+.schedule-title.animate-on-scroll { transition-delay: .1s; }
+.schedule-list.animate-on-scroll { transition-delay: .3s; }
+.results-copy.animate-on-scroll { transition-delay: .1s; }
+.results-images.animate-on-scroll { transition-delay: .3s; }
 .destination-kicker.animate-on-scroll { transition-delay: .1s; }
 .destination-title.animate-on-scroll { transition-delay: .25s; }
 .destination-description.animate-on-scroll { transition-delay: .4s; }
