@@ -58,7 +58,6 @@ const pageCopy = {
       '.hero-intro': 'A mountain bike competition between forest, water, and city. Save your place at the start line and know the terrain before you arrive.',
       '.signal-line': 'Valdivia / Chile <span class="signal-rule"></span> VBF / NEXT EDITION',
       '.status-message': '10–14 March 2027 <span aria-hidden="true">↗</span>',
-      
       '#event-title': 'Five days.<br><em>Two formats.</em>',
       '.event-intro .lead-copy': 'Valdivia Bike Fest brings together those who come for the challenge and stay for the landscape. Everything you need to prepare for your race, in one place.',
       '.event-intro .arrow-link': 'Discover the event <span aria-hidden="true">↗</span>',
@@ -71,7 +70,6 @@ const pageCopy = {
       '.info-list li:nth-child(3) em': 'A community that starts before pedaling.',
       
       '#route-title': 'Read the terrain<br>before you <em>ride it.</em>',
-      '.route-header-copy': 'Explore a route reference and discover how a VBF race day is organized. Official distance, elevation, and schedule details will be published here.',
       '.route-tab:nth-child(1) strong': 'XCO',
       '.route-tab:nth-child(1) small': 'Cross-Country Olympic · ~3.6 km per lap',
       '.route-tab:nth-child(2) strong': 'XCC',
@@ -95,15 +93,8 @@ const pageCopy = {
       '.schedule-row:nth-child(4) em': 'Online query',
       
       '#results-title': 'Your mark<br>stays <em>here.</em>',
-      '.results-copy > p:not(.section-kicker)': 'When the race ends, come back to find your time, your category, and where you placed in the pack.',
-      '.results-copy .arrow-link': 'View results <span aria-hidden="true">↗</span>',
-      '.results-board-head span:first-child': 'VBF / RESULTS',
-      '.results-board-head span:last-child': 'COMING SOON',
-      '.results-empty strong': 'Results<br>to be published',
-      '.results-empty p': 'The board activates after the race.',
-      '.results-board-foot span:nth-child(1)': 'OVERALL',
-      '.results-board-foot span:nth-child(2)': 'CATEGORIES',
-      '.results-board-foot span:nth-child(3)': 'TIMES',
+      '.results-copy > p:not(.section-kicker)': 'When the race ends, find your time, your category, and where you placed in the pack. The official board awaits you on a single screen.',
+      '.results-copy .button-dark': 'View full results <span aria-hidden="true">↗</span>',
       
       '#valdivia-title': 'Come for<br>the race.<br><em>Stay for<br>the city.</em>',
       '.valdivia-copy > p:not(.section-kicker)': 'A city of rivers, rain, and deep green. Turn your race into a getaway and discover the place that gives this experience its character.',
@@ -124,7 +115,7 @@ const pageCopy = {
       '.footer-meta span:last-child': 'ES / EN'
     },
     es: {
-      '#hero-title': 'La ruta<br><em>te está</em><br>esperando.',
+      '#hero-title': 'La ruta<br><em>está esperando.</em>',
       '.hero-intro': 'Una competencia de mountain bike entre bosque, agua y ciudad. Guarda tu lugar en la línea de partida y conoce el terreno antes de llegar.',
       '.signal-line': 'Valdivia / Chile <span class="signal-rule"></span> VBF / PRÓXIMA EDICIÓN',
       '.status-message': '10–14 marzo 2027 <span aria-hidden="true">↗</span>',
@@ -141,7 +132,6 @@ const pageCopy = {
       '.info-list li:nth-child(3) em': 'Una comunidad que empieza antes de pedalear.',
       
       '#route-title': 'Lee el terreno<br>antes de <em>vivirlo.</em>',
-      '.route-header-copy': 'Explora una referencia del trazado y descubre cómo se organiza una jornada VBF. Los datos oficiales de distancia, desnivel y horarios se publicarán aquí.',
       '.route-tab:nth-child(1) strong': 'XCO',
       '.route-tab:nth-child(1) small': 'Cross-Country Olímpico · ~3,6 km por vuelta',
       '.route-tab:nth-child(2) strong': 'XCC',
@@ -165,15 +155,8 @@ const pageCopy = {
       '.schedule-row:nth-child(4) em': 'Consulta online',
       
       '#results-title': 'La marca<br>queda <em>aquí.</em>',
-      '.results-copy > p:not(.section-kicker)': 'Cuando la carrera termine, vuelve a este panel para buscar tu tiempo, tu categoría y el lugar que ocupaste en el pelotón.',
-      '.results-copy .arrow-link': 'Ver resultados <span aria-hidden="true">↗</span>',
-      '.results-board-head span:first-child': 'VBF / RESULTADOS',
-      '.results-board-head span:last-child': 'PRÓXIMAMENTE',
-      '.results-empty strong': 'Resultados<br>por publicar',
-      '.results-empty p': 'El tablero se activa después de la carrera.',
-      '.results-board-foot span:nth-child(1)': 'GENERAL',
-      '.results-board-foot span:nth-child(2)': 'CATEGORÍAS',
-      '.results-board-foot span:nth-child(3)': 'TIEMPOS',
+      '.results-copy > p:not(.section-kicker)': 'Cuando la carrera termine, busca tu tiempo, tu categoría y el lugar que ocupaste en el pelotón. El tablero oficial te espera en una sola pantalla.',
+      '.results-copy .button-dark': 'Ver resultados completos <span aria-hidden="true">↗</span>',
       
       '#valdivia-title': 'Ven por<br>la carrera.<br><em>Quédate por<br>la ciudad.</em>',
       '.valdivia-copy > p:not(.section-kicker)': 'Una ciudad de ríos, lluvia y verde profundo. Haz de tu carrera una escapada y conoce el lugar que le da su carácter a esta experiencia.',
