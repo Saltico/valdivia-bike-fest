@@ -57,10 +57,10 @@ const pageCopy = {
       '#hero-title': 'The route<br><em>is waiting</em>',
       '.hero-intro': 'A mountain bike competition between forest, water, and city. Save your place at the start line and know the terrain before you arrive.',
       '.signal-line': 'Valdivia / Chile <span class="signal-rule"></span> VBF / NEXT EDITION',
-      '.status-message': '10–14 March 2027 <span aria-hidden="true">↗</span>',
+      '.status-message': '10–14 March 2027 <span aria-hidden="true">↗\uFE0E</span>',
       '#event-title': 'Five days<br><em>Two formats</em>',
       '.event-intro .lead-copy': 'Valdivia Bike Fest brings together those who come for the challenge and stay for the landscape. Everything you need to prepare for your race, in one place.',
-      '.event-intro .arrow-link': 'Discover the event <span aria-hidden="true">↗</span>',
+      '.event-intro .arrow-link': 'Discover the event <span aria-hidden="true">↗\uFE0E</span>',
       '.event-grid-label': 'WHAT YOU\'LL FIND',
       '.info-list li:nth-child(1) strong': 'Two race<br>formats',
       '.info-list li:nth-child(1) em': 'XCO and XCC circuits in Valdivia.',
@@ -76,7 +76,7 @@ const pageCopy = {
       '.route-tab:nth-child(2) small': 'Short Track · ~0.81 km per lap',
       '.route-detail-top span:last-child': 'OFFICIAL',
       '.detail-footer span': 'Schedule and lap counts per category are defined at the technical meeting.',
-      '.detail-footer a': 'View full route <span aria-hidden="true">↗</span>',
+      '.detail-footer a': 'View full route <span aria-hidden="true">↗\uFE0E</span>',
       
       '#schedule-title': 'Everything<br>in its <em>time</em>',
       '.schedule-row:nth-child(1) strong': 'Kit pickup',
@@ -94,17 +94,17 @@ const pageCopy = {
       
       '#results-title': 'Your mark<br>stays <em>here</em>',
       '.results-copy > p:not(.section-kicker)': 'When the race ends, find your time, your category, and where you placed in the pack. The official board awaits you on a single screen.',
-      '.results-copy .button-dark': 'View full results <span aria-hidden="true">↗</span>',
+      '.results-copy .button-dark': 'View full results <span aria-hidden="true">↗\uFE0E</span>',
       
       '#valdivia-title': 'Come to compete<br><em>Discover the city</em>',
       '.valdivia-copy > p:not(.section-kicker)': 'A city of rivers, rain, and deep green. Turn your race into a getaway and discover the place that gives this experience its character.',
-      '.valdivia-copy .arrow-link': 'Discover Valdivia <span aria-hidden="true">↗</span>',
+      '.valdivia-copy .arrow-link': 'Discover Valdivia <span aria-hidden="true">↗\uFE0E</span>',
       '.map-phrase': 'WHERE WATER<br>MEETS THE FOREST',
       
       '#contact-title': 'See you<br>on the <em>route</em>',
       '.cta-coordinate': 'VALDIVIA / CHILE',
       '.final-cta .section-kicker': 'Your next race',
-      '.cta-actions .text-link': 'Contact us <span aria-hidden="true">↗</span>',
+      '.cta-actions .text-link': 'Contact us <span aria-hidden="true">↗\uFE0E</span>',
       
       '.site-footer .footer-links a:nth-child(1)': 'Event',
       '.site-footer .footer-links a:nth-child(2)': 'Route & schedule',
@@ -118,11 +118,11 @@ const pageCopy = {
       '#hero-title': 'La ruta<br><em>está esperando</em>',
       '.hero-intro': 'Una competencia de mountain bike entre bosque, agua y ciudad. Guarda tu lugar en la línea de partida y conoce el terreno antes de llegar.',
       '.signal-line': 'Valdivia / Chile <span class="signal-rule"></span> VBF / PRÓXIMA EDICIÓN',
-      '.status-message': '10–14 marzo 2027 <span aria-hidden="true">↗</span>',
+      '.status-message': '10–14 marzo 2027 <span aria-hidden="true">↗\uFE0E</span>',
       
       '#event-title': 'Cinco días<br><em>Dos formatos</em>',
       '.event-intro .lead-copy': 'Valdivia Bike Fest reúne a quienes llegan por el desafío y se quedan por el paisaje. Todo lo que necesitas para preparar tu carrera, en un solo lugar.',
-      '.event-intro .arrow-link': 'Conoce el evento <span aria-hidden="true">↗</span>',
+      '.event-intro .arrow-link': 'Conoce el evento <span aria-hidden="true">↗\uFE0E</span>',
       '.event-grid-label': 'LO QUE ENCONTRARÁS',
       '.info-list li:nth-child(1) strong': 'Dos formatos<br>de carrera',
       '.info-list li:nth-child(1) em': 'Circuitos XCO y XCC en Valdivia.',
@@ -138,7 +138,7 @@ const pageCopy = {
       '.route-tab:nth-child(2) small': 'Short Track · ~0,81 km por vuelta',
       '.route-detail-top span:last-child': 'OFICIAL',
       '.detail-footer span': 'Horarios y vueltas por categoría se definen en el congreso técnico.',
-      '.detail-footer a': 'Ver ruta completa <span aria-hidden="true">↗</span>',
+      '.detail-footer a': 'Ver ruta completa <span aria-hidden="true">↗\uFE0E</span>',
       
       '#schedule-title': 'Todo en<br><em>su momento</em>',
       '.schedule-row:nth-child(1) strong': 'Retiro de kit',
@@ -156,17 +156,17 @@ const pageCopy = {
       
       '#results-title': 'La marca<br>queda <em>aquí</em>',
       '.results-copy > p:not(.section-kicker)': 'Cuando la carrera termine, busca tu tiempo, tu categoría y el lugar que ocupaste en el pelotón. El tablero oficial te espera en una sola pantalla.',
-      '.results-copy .button-dark': 'Ver resultados completos <span aria-hidden="true">↗</span>',
+      '.results-copy .button-dark': 'Ver resultados completos <span aria-hidden="true">↗\uFE0E</span>',
       
       '#valdivia-title': 'Ven a competir<br><em>Conoce la ciudad</em>',
       '.valdivia-copy > p:not(.section-kicker)': 'Una ciudad de ríos, lluvia y verde profundo. Haz de tu carrera una escapada y conoce el lugar que le da su carácter a esta experiencia.',
-      '.valdivia-copy .arrow-link': 'Descubre Valdivia <span aria-hidden="true">↗</span>',
+      '.valdivia-copy .arrow-link': 'Descubre Valdivia <span aria-hidden="true">↗\uFE0E</span>',
       '.map-phrase': 'DONDE EL AGUA<br>ENCUENTRA EL BOSQUE',
       
       '#contact-title': 'Nos vemos<br>en la <em>ruta</em>',
       '.cta-coordinate': 'VALDIVIA / CHILE',
       '.final-cta .section-kicker': 'Tu próxima carrera',
-      '.cta-actions .text-link': 'Contáctanos <span aria-hidden="true">↗</span>',
+      '.cta-actions .text-link': 'Contáctanos <span aria-hidden="true">↗\uFE0E</span>',
       
       '.site-footer .footer-links a:nth-child(1)': 'Evento',
       '.site-footer .footer-links a:nth-child(2)': 'Ruta y horario',
@@ -231,7 +231,7 @@ const pageCopy = {
       '.event-valdivia-copy h2': 'Valdivia<br><em>is the event</em>',
       '.event-valdivia-copy > p:nth-of-type(1)': 'Valdivian forest, mighty rivers, rain, and deep green. Racing in southern Chile is an experience that goes beyond the circuit: it is the land that gives the race its character.',
       '.event-valdivia-copy > p:nth-of-type(2)': 'The territorial identity of Valdivia — its German-Chilote culture, gastronomy, wetlands, and proximity to volcanoes and national parks — makes each edition truly unique.',
-      '.event-valdivia-copy .arrow-link': 'Discover Valdivia <span aria-hidden="true">↗</span>',
+      '.event-valdivia-copy .arrow-link': 'Discover Valdivia <span aria-hidden="true">↗\uFE0E</span>',
       // 7. Organizers
       '.event-organizers-section .section-kicker': 'Organized by',
       '.organizer-block:nth-child(1) .organizer-role': 'Organizer',
@@ -253,8 +253,8 @@ const pageCopy = {
       '.event-cta-content .section-kicker': 'Next step',
       '.event-cta-content h2': 'See the<br><em>2027 edition</em>',
       '.event-cta-content > p': 'Circuits, schedule, categories, and everything you need to arrive in Valdivia with your mind set on the route.',
-      '.event-cta-actions .button-lime': 'See 2027 edition <span aria-hidden="true">↗</span>',
-      '.event-cta-actions .button-ghost': 'Register <span aria-hidden="true">↗</span>'
+      '.event-cta-actions .button-lime': 'See 2027 edition <span aria-hidden="true">↗\uFE0E</span>',
+      '.event-cta-actions .button-ghost': 'Register <span aria-hidden="true">↗\uFE0E</span>'
     },
     es: { 
       // 1. Hero
@@ -309,7 +309,7 @@ const pageCopy = {
       '.event-valdivia-copy h2': 'Valdivia<br><em>es el evento</em>',
       '.event-valdivia-copy > p:nth-of-type(1)': 'Bosque valdiviano, ríos caudalosos, lluvia y verde profundo. Competir en el sur de Chile es una experiencia que va más allá del circuito: es el territorio el que le da carácter a la carrera.',
       '.event-valdivia-copy > p:nth-of-type(2)': 'La identidad territorial de Valdivia —su cultura germano-chilota, su gastronomía, sus humedales y su cercanía con volcanes y parques nacionales— convierte cada edición en algo irrepetible.',
-      '.event-valdivia-copy .arrow-link': 'Descubre Valdivia <span aria-hidden="true">↗</span>',
+      '.event-valdivia-copy .arrow-link': 'Descubre Valdivia <span aria-hidden="true">↗\uFE0E</span>',
       // 7. Organizadores
       '.event-organizers-section .section-kicker': 'Organiza',
       '.organizer-block:nth-child(1) .organizer-role': 'Organiza',
@@ -331,8 +331,8 @@ const pageCopy = {
       '.event-cta-content .section-kicker': 'Siguiente paso',
       '.event-cta-content h2': 'Conoce la<br><em>edición 2027</em>',
       '.event-cta-content > p': 'Circuitos, programa, categorías y todo lo que necesitas para llegar a Valdivia con la cabeza puesta en la ruta.',
-      '.event-cta-actions .button-lime': 'Ver edición 2027 <span aria-hidden="true">↗</span>',
-      '.event-cta-actions .button-ghost': 'Inscríbete <span aria-hidden="true">↗</span>'
+      '.event-cta-actions .button-lime': 'Ver edición 2027 <span aria-hidden="true">↗\uFE0E</span>',
+      '.event-cta-actions .button-ghost': 'Inscríbete <span aria-hidden="true">↗\uFE0E</span>'
     }
   },
   ruta: {
@@ -402,7 +402,7 @@ const pageCopy = {
       '#route-contact-title': 'See you<br>on the <em>route</em>',
       '.final-cta .section-kicker': 'Your next race',
       '.final-cta .cta-coordinate': 'VALDIVIA / CHILE',
-      '.cta-actions .text-link': 'Contact us <span aria-hidden="true">↗</span>'
+      '.cta-actions .text-link': 'Contact us <span aria-hidden="true">↗\uFE0E</span>'
     },
     es: { 
       // 1. Hero
@@ -469,7 +469,7 @@ const pageCopy = {
       '#route-contact-title': 'Nos vemos<br>en la <em>ruta</em>',
       '.final-cta .section-kicker': 'Tu próxima carrera',
       '.final-cta .cta-coordinate': 'VALDIVIA / CHILE',
-      '.cta-actions .text-link': 'Contáctanos <span aria-hidden="true">↗</span>'
+      '.cta-actions .text-link': 'Contáctanos <span aria-hidden="true">↗\uFE0E</span>'
     }
   },
   resultados: {
@@ -530,19 +530,19 @@ const pageCopy = {
       // Destination sections
       '#alerce-costero-title': 'Alerce Costero: <span class="destination-title-accent">ancient forests</span> by the Pacific',
       '#alerce-costero .destination-description': 'Enter one of the most biodiverse temperate forests on the planet. Alerce Costero National Park is home to millenary trees, trails among myrtles and coigües, and unique coastal landscapes in the Los Ríos Region.',
-      '#alerce-costero .destination-link': 'Learn more <span aria-hidden="true">↗</span>',
+      '#alerce-costero .destination-link': 'Learn more <span aria-hidden="true">↗\uFE0E</span>',
       '#mocho-choshuenco-title': 'Mocho Choshuenco: mountains, <span class="destination-title-accent">snow and adventure</span>',
       '#mocho-choshuenco .destination-description': 'Climb to the crater of this active volcano and discover a turquoise lagoon at its summit. Mocho Choshuenco National Reserve offers trekking, winter sports, and panoramic views of the Andes and the Pacific Ocean.',
-      '#mocho-choshuenco .destination-link': 'Learn more <span aria-hidden="true">↗</span>',
+      '#mocho-choshuenco .destination-link': 'Learn more <span aria-hidden="true">↗\uFE0E</span>',
       '#punucapa-title': 'Punucapa: <span class="destination-title-accent">wetlands</span>, rivers and nature',
       '#punucapa .destination-description': 'Navigate the Punucapa wetlands, a unique ecosystem where rivers meet the forest. Observe native birds, explore trails among aquatic vegetation, and discover the biodiversity of Valdivian wetlands.',
-      '#punucapa .destination-link': 'Learn more <span aria-hidden="true">↗</span>',
+      '#punucapa .destination-link': 'Learn more <span aria-hidden="true">↗\uFE0E</span>',
       '#cervezas-title': 'The <span class="destination-title-accent">brewing tradition</span> of Valdivia',
       '#cervezas .destination-description': 'Valdivia is the birthplace of craft beer in Chile. Discover the German-Valdivian brewing heritage, visit historic breweries like Kunstmann and Schopfloch, and taste unique beers made with local ingredients.',
-      '#cervezas .destination-link': 'Learn more <span aria-hidden="true">↗</span>',
+      '#cervezas .destination-link': 'Learn more <span aria-hidden="true">↗\uFE0E</span>',
       '#fuerte-niebla-title': 'Fuerte Niebla: <span class="destination-title-accent">history</span> by the sea',
       '#fuerte-niebla .destination-description': 'Visit the Castillo de Niebla, one of the most important Spanish colonial fortresses in South America. Explore its walls, museums, and cannons while enjoying panoramic views of Valdivia Bay and the Calle-Calle River.',
-      '#fuerte-niebla .destination-link': 'Learn more <span aria-hidden="true">↗</span>'
+      '#fuerte-niebla .destination-link': 'Learn more <span aria-hidden="true">↗\uFE0E</span>'
     },
     es: { 
       '.valdivia-hero-content .section-kicker': 'Valdivia Bike Fest / Valdivia', 
@@ -559,19 +559,19 @@ const pageCopy = {
       // Destination sections
       '#alerce-costero-title': 'Alerce Costero: <span class="destination-title-accent">bosques milenarios</span> junto al Pacífico',
       '#alerce-costero .destination-description': 'Entra a uno de los bosques templados más biodiversos del planeta. El Parque Nacional Alerce Costero es hogar de árboles milenarios, senderos entre arrayanes y coigües, y paisajes costeros únicos en la Región de Los Ríos.',
-      '#alerce-costero .destination-link': 'Conocer más <span aria-hidden="true">↗</span>',
+      '#alerce-costero .destination-link': 'Conocer más <span aria-hidden="true">↗\uFE0E</span>',
       '#mocho-choshuenco-title': 'Mocho Choshuenco: montañas, <span class="destination-title-accent">nieve y aventura</span>',
       '#mocho-choshuenco .destination-description': 'Asciende al cráter de este volcán activo y descubre una laguna turquesa en su cumbre. La Reserva Nacional Mocho Choshuenco ofrece trekking, deportes de invierno y vistas panorámicas de los Andes y el océano Pacífico.',
-      '#mocho-choshuenco .destination-link': 'Conocer más <span aria-hidden="true">↗</span>',
+      '#mocho-choshuenco .destination-link': 'Conocer más <span aria-hidden="true">↗\uFE0E</span>',
       '#punucapa-title': 'Punucapa: <span class="destination-title-accent">humedales</span>, ríos y naturaleza',
       '#punucapa .destination-description': 'Navega los humedales de Punucapa, un ecosistema único donde los ríos encuentran el bosque. Observa aves nativas, explora senderos entre vegetación acuática y descubre la biodiversidad de los humedales valdivianos.',
-      '#punucapa .destination-link': 'Conocer más <span aria-hidden="true">↗</span>',
+      '#punucapa .destination-link': 'Conocer más <span aria-hidden="true">↗\uFE0E</span>',
       '#cervezas-title': 'La <span class="destination-title-accent">tradición cervecera</span> de Valdivia',
       '#cervezas .destination-description': 'Valdivia es la cuna de la cerveza artesanal en Chile. Descubre la herencia cervecera alemana-valdiviana, visita cervecerías históricas como Kunstmann y Schopfloch, y degusta cervezas únicas hechas con ingredientes locales.',
-      '#cervezas .destination-link': 'Conocer más <span aria-hidden="true">↗</span>',
+      '#cervezas .destination-link': 'Conocer más <span aria-hidden="true">↗\uFE0E</span>',
       '#fuerte-niebla-title': 'Fuerte Niebla: <span class="destination-title-accent">historia</span> junto al mar',
       '#fuerte-niebla .destination-description': 'Visita el Castillo de Niebla, una de las fortalezas coloniales españolas más importantes de Sudamérica. Recorre sus murallas, museos y cañones mientras disfrutas vistas panorámicas de la bahía de Valdivia y el río Calle-Calle.',
-      '#fuerte-niebla .destination-link': 'Conocer más <span aria-hidden="true">↗</span>'
+      '#fuerte-niebla .destination-link': 'Conocer más <span aria-hidden="true">↗\uFE0E</span>'
     }
   },
   contacto: {
@@ -583,7 +583,7 @@ const pageCopy = {
       'label[for="contact-name"]': 'Name',
       'label[for="contact-email"]': 'Email',
       'label[for="contact-message"]': 'Message',
-      '.contact-form .button': 'Send message <span>↗</span>',
+      '.contact-form .button': 'Send message <span>↗\uFE0E</span>',
       '.contact-data-strip .contact-data:nth-child(1) span:first-child': 'DATE',
       '.contact-data-strip .contact-data:nth-child(1) span:last-child': '10 — 14 March 2027',
       '.contact-data-strip .contact-data:nth-child(2) span:first-child': 'VENUE',
@@ -606,7 +606,7 @@ const pageCopy = {
       'label[for="contact-name"]': 'Nombre',
       'label[for="contact-email"]': 'Email',
       'label[for="contact-message"]': 'Mensaje',
-      '.contact-form .button': 'Enviar mensaje <span>↗</span>',
+      '.contact-form .button': 'Enviar mensaje <span>↗\uFE0E</span>',
       '.contact-data-strip .contact-data:nth-child(1) span:first-child': 'FECHA',
       '.contact-data-strip .contact-data:nth-child(1) span:last-child': '10 — 14 marzo 2027',
       '.contact-data-strip .contact-data:nth-child(2) span:first-child': 'SEDE',
@@ -789,7 +789,7 @@ function setupLanguageToggle() {
           '.mobile-menu nav a:nth-child(3)': 'Results',
           '.mobile-menu nav a:nth-child(4)': 'Valdivia',
           '.mobile-menu nav a:nth-child(5)': 'Contact',
-          '[data-registration]': 'Register <span aria-hidden="true">↗</span>',
+          '[data-registration]': 'Register <span aria-hidden="true">↗\uFE0E</span>',
           '.menu-toggle': null // handled separately for aria-label
         }
       : { 
@@ -803,7 +803,7 @@ function setupLanguageToggle() {
           '.mobile-menu nav a:nth-child(3)': 'Resultados',
           '.mobile-menu nav a:nth-child(4)': 'Valdivia',
           '.mobile-menu nav a:nth-child(5)': 'Contacto',
-          '[data-registration]': 'Inscríbete <span aria-hidden="true">↗</span>',
+          '[data-registration]': 'Inscríbete <span aria-hidden="true">↗\uFE0E</span>',
           '.menu-toggle': null // handled separately for aria-label
         };
     
@@ -854,7 +854,7 @@ function setupCountdown() {
   const target = new Date(date).getTime();
   const tick = () => {
     const distance = target - Date.now();
-    if (distance <= 0) { message.textContent = currentLanguage === 'es' ? 'La carrera está en marcha ↗' : 'Race day is live ↗'; return; }
+    if (distance <= 0) { message.textContent = currentLanguage === 'es' ? 'La carrera está en marcha ↗\uFE0E' : 'Race day is live ↗\uFE0E'; return; }
     const values = { days: Math.floor(distance / 86400000), hours: Math.floor(distance / 3600000) % 24, minutes: Math.floor(distance / 60000) % 60, seconds: Math.floor(distance / 1000) % 60 };
     Object.entries(values).forEach(([key, value]) => { const node = countdown.querySelector(`[data-${key}]`); if (node) node.textContent = String(value).padStart(2, '0'); });
   };
