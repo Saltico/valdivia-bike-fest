@@ -724,7 +724,7 @@ h1 { margin: 1.8rem 0 1.5rem; font-size: clamp(5rem, 10vw, 9rem); line-height: .
   .route-event-item { border-right: 0; }
   /* Event page mobile */
   .hero-organizers-wrap { min-height: auto; display: block; }
-  .event-hero { height: 55vh; min-height: 32rem; align-items: flex-start; }
+  .event-hero { height: auto; min-height: 55vh; align-items: flex-start; padding-bottom: 3rem; }
   .event-schedule-row { grid-template-columns: 2.5rem 1fr; gap: .8rem; padding-block: 1rem; }
   .event-schedule-row .schedule-status { grid-column: 2; justify-self: start; }
   .event-categories-grid { grid-template-columns: 1fr; }
