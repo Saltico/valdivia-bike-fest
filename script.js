@@ -866,15 +866,19 @@ function setupHeaderScroll() {
   const header = document.querySelector('.site-header');
   if (!header) return;
   const threshold = 100;
-  const onScroll = () => {
-    if (window.scrollY > threshold) {
+  const onScroll = (target) => {
+    const scrollY = target.scrollTop ?? window.scrollY;
+    if (scrollY > threshold) {
       header.classList.add('is-scrolled');
     } else {
       header.classList.remove('is-scrolled');
     }
   };
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  window.addEventListener('scroll', () => onScroll(window), { passive: true });
+  document.querySelectorAll('.valdivia-presentation').forEach(el => {
+    el.addEventListener('scroll', () => onScroll(el), { passive: true });
+  });
+  onScroll(window);
 }
 
 function setupCrossfade() {
